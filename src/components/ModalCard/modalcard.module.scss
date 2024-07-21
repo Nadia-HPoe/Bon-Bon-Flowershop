@@ -1,0 +1,172 @@
+.container {
+  display: grid;
+  grid-template-columns: 47% 47% 5%;
+  align-items: flex-start;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 650px;
+  border-radius: 20px;
+}
+
+.info {
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.button__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  transition: 0.3s all;
+}
+
+.icon {
+  transition: 0.5s all;
+  &:hover,
+  &:active {
+    fill: black;
+  }
+}
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.price {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.button__order {
+  background: #e457ad;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: white;
+  &:hover,
+  &:active {
+    border: none;
+    border-color: transparent;
+    filter: drop-shadow(0 0 4px rgba(222, 102, 192, 0.7));
+  }
+}
+
+.button__like {
+  background-color: transparent;
+  border: none;
+  &:hover,
+  &:active {
+    background-color: transparent;
+    border: none;
+    border-color: transparent;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
