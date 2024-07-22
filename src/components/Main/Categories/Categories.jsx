@@ -21,7 +21,7 @@ const Categories = () => {
     <>
       <div className={styles.caregories_container}>
         <nav className={styles.caregories_wrapper}>
-          <h1>Категории</h1>
+          <h2>Категории</h2>
           <ul className={styles.caregories}>
             <li
               className={styles.caregories_items}
