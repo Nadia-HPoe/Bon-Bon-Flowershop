@@ -1,3 +1,5 @@
+@import "../../../assets/styles/_var.scss";
+
 .mainBanner_container {
   width: 100vw;
   height: 100vh;
@@ -15,8 +17,9 @@
   padding-bottom: 10%;
 
   .mainBanner_button {
-    background-color: rgb(255, 114, 137);
-    color: aliceblue;
+    background-color: $pink;
+    font-family: $Montserrat-Bold, sans-serif;
+    color: $white;
     margin: 1.5rem;
     padding: 1rem 3rem;
     border-radius: 2rem;
@@ -26,7 +29,7 @@
     &:hover {
       cursor: pointer;
       opacity: 0.6;
-      box-shadow: inset 2px -2px 12px 0 rgba(255, 22, 232, 0.36);
+      box-shadow: inset 2px -2px 12px 0 rgba(88, 0, 79, 0.36);
       transition: 0.8s all;
     }
   }
