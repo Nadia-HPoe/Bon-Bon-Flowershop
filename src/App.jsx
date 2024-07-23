@@ -3,21 +3,22 @@ import CarouselCard from './components/CarouselCard/CarouselCard';
 import { Header } from './components/Header';
 import Carousel from './components/carousel/Carousel';
 
+import bouquetImage from './assets/images/bouquets/bouquet-1.png';
+
 function App() {
   const bouquet = {
-    price: '10 000 РУБ',
-    img: '../../assets/images/bouquets/bouquet-1.png',
+    price: '10 000',
+    img: bouquetImage,
   };
 
-  const bouquets = Array.from({ length: 10 }, () => ({ ...bouquet }));
-  const cards = bouquets.map((item) => <CarouselCard />);
+  const bouquets = Array.from({ length: 12 }, () => ({ ...bouquet }));
+  const cards = bouquets.map((item) => <CarouselCard {...item} />);
 
   return (
     <>
-      <div>
+      <div style={{ maxWidth: 1000 }}>
         <Header />
-        {/* <Carousel items={cards} /> */}
-        <CarouselCard />
+        <Carousel items={cards} />
       </div>
     </>
   );
