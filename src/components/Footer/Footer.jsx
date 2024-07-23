@@ -45,13 +45,13 @@ function Footer() {
               className={styles.contacts__whatsapp__icon}
               href="https://api.whatsapp.com/send/?phone=%2B79038492777&text&type=phone_number&app_absent=0"
             >
-              <Icons name="icon-whatsapp" size="40" color="biege" />
+              <Icons name="whatsapp" size="40" color="#ffebce" />
             </a>
             <a
               className={styles.contacts__vk__icon}
               href="https://vk.com/bon_bon52"
             >
-              <Icons name="icon-vk" size="40" color="biege" />
+              <Icons name="vk" size="40" color="#ffebce" />
             </a>
           </div>
         </div>

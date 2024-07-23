@@ -88,9 +88,9 @@ function FooterMain() {
               >
                 <Icons
                   className={styles.contacts__whatsapp__icon}
-                  name="icon-whatsapp"
+                  name="whatsapp"
                   size="40"
-                  color="biege"
+                  color="#ffebce"
                 />
               </a>
               <a
@@ -99,9 +99,9 @@ function FooterMain() {
               >
                 <Icons
                   className={styles.contacts__vk__icon}
-                  name="icon-vk"
+                  name="vk"
                   size="40"
-                  color="biege"
+                  color="#ffebce"
                 />
               </a>
             </div>
