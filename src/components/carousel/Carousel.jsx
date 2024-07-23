@@ -1,32 +1,46 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import 'swiper/scss';
+import 'swiper/scss/pagination';
+import 'swiper/scss/navigation';
+import 'swiper/scss/effect-coverflow';
+
 import styles from './Carousel.module.scss';
 
 function Carousel({ items }) {
-  const pagination = {
-    clickable: true,
-  };
-
   return (
     <div className={styles.wrapper}>
       <h3>Готовые букеты</h3>
       <Swiper
-        spaceBetween={25}
-        slidesPerView={1}
-        navigation={true}
-        pagination={pagination}
-        modules={[Pagination, Navigation]}
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={4}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          scale: 0.75,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        pagination={{
+          clickable: true,
+          bulletClass: styles.bullet,
+          bulletActiveClass: styles.bullet__active,
+        }}
+        navigation={{
+          clickable: true,
+        }}
         className={styles.swiper}
-        breakpoints={{ 900: { slidesPerView: 2 } }}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {items.map((item, index) => (
-          <SwiperSlide key={index}>{item}</SwiperSlide>
+          <SwiperSlide key={index} className={styles.slide}>
+            {item}
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>

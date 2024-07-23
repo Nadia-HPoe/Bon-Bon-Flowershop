@@ -5,6 +5,8 @@ import Carousel from './components/carousel/Carousel';
 
 import bouquetImage from './assets/images/bouquets/bouquet-1.png';
 
+import styles from './App.module.scss';
+
 function App() {
   const bouquet = {
     price: '10 000',
@@ -16,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div style={{ maxWidth: 1000 }}>
+      <div className={styles.app}>
         <Header />
         <Carousel items={cards} />
       </div>
