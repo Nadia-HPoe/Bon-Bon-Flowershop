@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
 
 import CarouselCard from '../CarouselCard/CarouselCard';
-import Container from '../Container/Container';
 
 import bouquetImage from '../../assets/images/bouquets/bouquet-1.png';
 
@@ -23,8 +22,8 @@ function ReadyBouquet() {
   const items = bouquets.map((item) => <CarouselCard {...item} />);
 
   return (
-    <Container>
-      <h3>Готовые букеты</h3>
+    <div>
+      <h2>Готовые букеты</h2>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -55,7 +54,7 @@ function ReadyBouquet() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </Container>
+    </div>
   );
 }
 

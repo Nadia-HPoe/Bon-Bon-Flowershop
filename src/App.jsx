@@ -1,7 +1,7 @@
-import './App.module.scss';
 import { Header } from './components/Header';
-import ReadyBouquet from './components/ReadyBouquet/ReadyBouquet';
+import { Main } from './pages/Main';
 
+import './App.module.scss';
 import styles from './App.module.scss';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <div className={styles.app}>
         <Header />
-        <ReadyBouquet />
+        <Main />
       </div>
     </>
   );
