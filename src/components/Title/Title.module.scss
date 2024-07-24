@@ -1,0 +1,35 @@
+@import '../../assets/styles/var.scss';
+
+// .revealText {
+//   padding: 4rem 0 3rem;
+//   text-align: center;
+//   margin: 0 auto;
+//   color: $pink;
+//   font-family: $Montserrat-SemiBold, sans-serif;
+//   font-size: 2rem;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   width: 30em;
+//   animation: type 5s steps(60, end);
+//   opacity: 0;
+//   transition: opacity 0.5s;
+// }
+
+// .visible {
+//   opacity: 1;
+// }
+
+// @keyframes type {
+//   from {
+//     width: 0;
+//   }
+// }
+
+.title {
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0 auto;
+  color: $pink;
+  font-family: $Montserrat-SemiBold, sans-serif;
+  font-size: 1rem;
+}
