@@ -1,18 +1,13 @@
-
+import "./App.module.scss";
 import { Header } from "./components/Header";
 import { Main } from "./pages/Main";
-import { FooterMain } from "./components/Footer/FooterMain";
-
-import "./App.module.scss";
-import styles from './App.module.scss';
 
 function App() {
   return (
     <>
-      <div className={styles.app}>
+      <div>
         <Header />
         <Main />
-        <FooterMain />
       </div>
     </>
   );
