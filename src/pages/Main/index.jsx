@@ -6,6 +6,7 @@ import Container from '../../components/Container/Container';
 import ReadyBouquet from '../../components/ReadyBouquet/ReadyBouquet';
 import Title from '../../components/Title/Title';
 import styles from '../../components/CarouselCard/CarouselCard.module.scss';
+import Catalogue from '../Catalogue';
 
 function Main() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -23,6 +24,7 @@ function Main() {
       <Container>
         <ReadyBouquet />
         <Categories />
+        <Catalogue />
       </Container>
     </div>
   );

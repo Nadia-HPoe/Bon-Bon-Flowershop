@@ -1,0 +1,12 @@
+.container__catalogue {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.categories {
+    grid-column: 1 / 2;
+}
+
+.catalogue {
+    grid-column: 2 / 3;
+}
