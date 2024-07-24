@@ -1,0 +1,28 @@
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 25px;
+  gap: 25px;
+}
+
+.card__image {
+  width: fit-content;
+  width: 100%;
+}
+
+.card__price {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card__button {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #e457ad;
+  border-radius: 30px;
+  padding: 13px 37px;
+}
