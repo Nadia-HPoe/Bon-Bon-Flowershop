@@ -1,7 +1,9 @@
-import { useState } from "react";
-import { ModalCard } from "../../components/ModalCard/ModalCard";
-import MainBanner from "../../components/Main/MainBanner/MainBanner";
-import Categories from "../../components/Main/Categories/Categories";
+import { useState } from 'react';
+import { ModalCard } from '../../components/ModalCard/ModalCard';
+import MainBanner from '../../components/Main/MainBanner/MainBanner';
+import Categories from '../../components/Main/Categories/Categories';
+import Container from '../../components/Container/Container';
+import ReadyBouquet from '../../components/ReadyBouquet/ReadyBouquet';
 
 function Main() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -11,12 +13,12 @@ function Main() {
       <MainBanner />
       <div>
         <button onClick={() => setModalIsOpen(true)}>Заказать</button>
-        <ModalCard
-          isOpen={modalIsOpen}
-          onClose={() => setModalIsOpen(false)}
-        ></ModalCard>
+        <ModalCard isOpen={modalIsOpen} onClose={() => setModalIsOpen(false)}></ModalCard>
       </div>
-      <Categories />
+      <Container>
+        <ReadyBouquet />
+        <Categories />
+      </Container>
     </div>
   );
 }

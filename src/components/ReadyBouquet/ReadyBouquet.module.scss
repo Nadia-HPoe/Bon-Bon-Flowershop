@@ -1,0 +1,26 @@
+.swiper {
+  width: 100%;
+  padding: 50px;
+}
+
+.slide {
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 6px 4px #00000014;
+}
+
+.bullet,
+.bullet__active {
+  margin: 6px;
+  width: 40px;
+  border: 2px solid;
+  display: inline-block;
+}
+
+.bullet {
+  border-color: grey;
+}
+
+.bullet__active {
+  border-color: lightgray;
+}
