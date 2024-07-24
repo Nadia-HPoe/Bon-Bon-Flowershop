@@ -1,29 +1,16 @@
-import React, { useState } from 'react';
-import { ModalCard } from '../../components/ModalCard/ModalCard';
-import MainBanner from '../../components/Main/MainBanner/MainBanner';
-import Categories from '../../components/Main/Categories/Categories';
-import Container from '../../components/Container/Container';
-import ReadyBouquet from '../../components/ReadyBouquet/ReadyBouquet';
-import Title from '../../components/Title/Title';
-import styles from '../../components/CarouselCard/CarouselCard.module.scss';
-
+import React, { useState } from "react";
+import { ModalCard } from "../../components/ModalCard/ModalCard";
 function Main() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
+    ///кнопка для вызова модального окна товара
     <div>
-      <MainBanner />
-      <Title />
-      <div>
-        <button className={styles.card__button} onClick={() => setModalIsOpen(true)}>
-          Купить
-        </button>
-        <ModalCard isOpen={modalIsOpen} onClose={() => setModalIsOpen(false)}></ModalCard>
-      </div>
-      <Container>
-        <ReadyBouquet />
-        <Categories />
-      </Container>
+      <button onClick={() => setModalIsOpen(true)}>Заказать</button>
+      <ModalCard
+        isOpen={modalIsOpen}
+        onClose={() => setModalIsOpen(false)}
+      ></ModalCard>
     </div>
   );
 }
