@@ -1,5 +1,5 @@
 
-import { Header } from "./components/Header";
+import { Header } from "./components/Header/Header";
 import { Main } from "./pages/Main";
 import { FooterMain } from "./components/Footer/FooterMain";
 

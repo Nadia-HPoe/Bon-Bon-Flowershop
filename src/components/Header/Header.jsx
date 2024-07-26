@@ -19,16 +19,16 @@ function Header() {
                     </div>
                     <div className={headerStyles.header__rightContainer}>
                         <div className={headerStyles.header__search}>
-                            <Icons name="magnifying-glass" size="28" color="#3F3F3F" />
+                            <Icons name="magnifying-glass" size="26" color="#042423" />
                             <input type="text" className={headerStyles.header__input}/>
                         </div>
                         <div className={headerStyles.header__phone}>
                             <div className={headerStyles.header__phoneNumber}>+7 999 111 22 33</div>
-                            <a href="https://wa.me/message/CGNNUIQSEJQYB1"><Icons name="phone" size="42" color="#023E3B" /></a>
+                            <a href="https://wa.me/message/CGNNUIQSEJQYB1"><Icons name="phone" size="35" color="#023E3B" /></a>
                         </div>
                         <div className={headerStyles.header__icons}>
                             <a href="#" className={headerStyles.header__icon}><Icons name="user" size="28" color="#727272" /></a>
-                            <a href="#" className={headerStyles.header__icon}><Icons name="heart" size="22" color="#727272" /></a>
+                            <a href="#" className={headerStyles.header__icon}><Icons className={headerStyles.icon__heart} name="heart" size="22" color="#EBEBEB" /></a>
                             <a href="#" className={headerStyles.header__icon}><Icons name="shopping-cart" size="32" color="#727272" /></a>
                         </div>
                     </div>    
