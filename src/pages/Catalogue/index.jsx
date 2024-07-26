@@ -3,7 +3,7 @@ import CatalogueCard from '../../components/CatalogueCard/CatalogueCard';
 import styles from '../Catalogue/Catalogue.module.scss';
 
 
-function Catalogue() {
+const Catalogue = () => {
   const [products, setProducts] = useState([]);
   const [displayedProducts, setDisplayedProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
