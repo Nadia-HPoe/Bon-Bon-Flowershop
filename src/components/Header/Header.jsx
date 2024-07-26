@@ -28,7 +28,7 @@ const Header = () => {
                         </div>
                         <div className={styles.header__icons}>
                             <a href="#" className={styles.header__icon}><Icons name="user" size="28" color="#727272" /></a>
-                            <a href="#" className={styles.header__icon}><Icons className={headerStyles.icon__heart} name="heart" size="22" color="#EBEBEB" /></a>
+                            <a href="#" className={styles.header__icon}><Icons className={styles.icon__heart} name="heart" size="22" color="#EBEBEB" /></a>
                             <a href="#" className={styles.header__icon}><Icons name="shopping-cart" size="32" color="#727272" /></a>
                         </div>
                     </div>    
