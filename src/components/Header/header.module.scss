@@ -2,11 +2,11 @@
 
 .header {
     position: relative;
-    height: 80px;
+    min-height: 5rem;
 }
 
 .header__container {
-    height: 80px;
+    min-height: 5rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -15,24 +15,25 @@
     opacity: 90%;
     display: flex;
     align-items: center;
-    padding: 0 75px;
+    justify-content: space-between;
 }
 
 .header__leftContainer {
     display: flex;
     align-items: center;
-    gap: 300px;
-    padding-right: 320px;
+    gap: 20rem;
+    padding-left: 5rem;
 }
 
 .header__rightContainer {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 5rem;
+    padding-right: 5rem;
 }
 
 .header__logo {
-    width: 128px;
+    width: 8rem;
 }
 
 .header__logo img {
@@ -43,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 200px;
+    gap: 1.5rem;
 }
 
 .header__menuLink {
@@ -51,45 +52,48 @@
     text-decoration: none;
     font-family: $Montserrat-Medium, sans-serif;
     font-size: 16px;
-    line-height: 19.36px;
-    letter-spacing: 0.01em;
 }
 
 .header__search {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .header__input {
-    width: 229px;
-    height: 28px;
-    border-radius: 20px;
+    width: 14rem;
+    height: 2rem;
+    border-radius: 1rem;
     outline: none;
     border: 1px solid $darkGreen;
-    margin-left: 10px;
-    padding: 0 10px;
+    padding: 0 1rem;
+    font-family: $Montserrat-Medium, sans-serif;
+    font-size: 16px;
 }
 
 .header__phone {
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
 .header__phoneNumber {
-    margin-right: 30px;
     font-family: $Montserrat-Medium, sans-serif;
     font-size: 18px;
-    line-height: 21.78px;
-    letter-spacing: 0.01em;
+    color: $darkGreen;
 }
 
 .header__icons {
-    width: 126px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .header__icon {
     cursor: pointer;
+}
+
+.icon__heart {
+    fill: none;
 }
