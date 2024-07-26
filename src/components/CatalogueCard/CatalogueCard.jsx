@@ -1,14 +1,23 @@
 import styles from '../CatalogueCard/CatalogueCard.module.scss';
+import Img from '../../assets/images/bouquets/bouquet-1.png'
 
-
-function CatalogueCard({ name, description, price, img }) {
+function CatalogueCard({ title, description, price }) {
     return (
         <div className={styles.card__pack}>
-            <h3 className={styles.card__name}>{name}</h3>
-            <p className={styles.card__description}>{description}</p>
-            <img className={styles.card__image} src={img} alt="Bouquet" />
-            <p className={styles.card__price}>{price} руб</p>
-            <button className={styles.card__button}>Купить</button>
+            <img className={styles.card__image} src={Img} />
+
+            <div className={styles.card__text}>
+                <h3 className={styles.card__title}>{title}</h3>
+                <p className={styles.card__description}>{description} </p>
+            </div>
+
+            <div className={styles.card__value}>
+                <p className={styles.card__price}>{price} руб</p>
+            </div>
+
+            <div className={styles.card__btn}>
+                <button className={styles.card__button}>Купить</button>
+            </div>
         </div>
     );
 }
