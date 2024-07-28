@@ -1,99 +1,101 @@
 @import '../../assets/styles/var';
 
 .header {
-    position: relative;
-    min-height: 5rem;
+  position: relative;
+  min-height: 5rem;
 }
 
 .header__container {
-    min-height: 5rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 2;
-    background-color: $gray;
-    opacity: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  min-height: 5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  background-color: $gray;
+  opacity: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__leftContainer {
-    display: flex;
-    align-items: center;
-    gap: 20rem;
-    padding-left: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  padding-left: 5rem;
 }
 
 .header__rightContainer {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    padding-right: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding-right: 5rem;
 }
 
 .header__logo {
-    width: 8rem;
+  width: 8rem;
 }
 
 .header__logo img {
-    width: 100%;
+  width: 100%;
 }
 
 .header__menu {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1.5rem;
 }
 
 .header__menuLink {
-    color: $darkGreen;
-    text-decoration: none;
-    font-family: $Montserrat-Medium, sans-serif;
-    font-size: 16px;
+  color: $darkGreen;
+  text-decoration: none;
+  font-family: $Montserrat-Medium, sans-serif;
+  font-size: 16px;
 }
 
 .header__search {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .header__input {
-    width: 14rem;
-    height: 2rem;
-    border-radius: 1rem;
-    outline: none;
-    border: 1px solid $darkGreen;
-    padding: 0 1rem;
-    font-family: $Montserrat-Medium, sans-serif;
-    font-size: 16px;
+  width: 14rem;
+  height: 2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: 1px solid $darkGreen;
+  padding: 0 1rem;
+  font-family: $Montserrat-Medium, sans-serif;
+  font-size: 16px;
 }
 
 .header__phone {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .header__phoneNumber {
-    font-family: $Montserrat-Medium, sans-serif;
-    font-size: 18px;
-    color: $darkGreen;
+  font-family: $Montserrat-Medium, sans-serif;
+  font-size: 18px;
+  color: $darkGreen;
 }
 
 .header__icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .header__icon {
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .icon__heart {
-    fill: none;
+  fill: none;
 }
