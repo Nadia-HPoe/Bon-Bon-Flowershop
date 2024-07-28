@@ -4,14 +4,13 @@
   display: grid;
   grid-template-columns: 47% 47% 5%;
   align-items: stretch;
-  font-family: var.$Montserrat-Regular;
+  padding: 2rem 0.7rem 3.06rem 1.43rem;
+  font-family: 'Montserrat-SemiBold', sans-serif;
 }
 
 .images {
   display: grid;
-  grid-template-rows: 80% 20%;
-  align-items: flex-start;
-  grid-gap: 1rem;
+  grid-gap: 0.75rem;
 }
 
 .image {
@@ -29,7 +28,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1.3rem;
 }
 
 .button__close {
@@ -96,7 +94,7 @@
   gap: 2rem;
 }
 .button__order {
-  padding: 13px 37px;
+  width: 11.875rem;
   cursor: pointer;
   border: none;
   color: #ffffff;
