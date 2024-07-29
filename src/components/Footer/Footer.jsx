@@ -1,6 +1,7 @@
 import styles from "./Footer.module.scss";
 import { Icons } from "../Icons/Icons";
 import logo from "../../assets/logo/Bon_bon_logo.png";
+import flower from "../../assets/picture/flower.svg";
 
 function Footer() {
   return (
@@ -55,6 +56,9 @@ function Footer() {
             </a>
           </div>
         </div>
+        <div className={styles.footer__flower}>
+            <img src={flower} alt="flower" className={styles.flower} />
+          </div>
       </div>
       <hr className={styles.footer__divider} />
       <div className={styles.footer__conrainer__team}>
