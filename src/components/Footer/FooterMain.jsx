@@ -60,10 +60,10 @@ function FooterMain() {
           <div className={styles.contacts__wrapper}>
             <a
               className={styles.contacts__phone}
-              href="tel:+7 903 888 9977"
+              href="tel:+7 903 849 2777"
               aria-label="Позвонить по телефону +7 903 888 9977"
             >
-              <p>+7 903 888 9977</p>
+              <p>+7 903 849 2777</p>
             </a>
             <div className={styles.contacts__working__hours}>
               <p className={styles.contacts__working__hours__title}>
@@ -75,11 +75,11 @@ function FooterMain() {
               </p>
             </div>
             <div className={styles.contacts__address}>
-              <p>Нижний Новгород,</p>
-              <p>ул. Свободы, д.7</p>
+              <p>г. Нижний Новгород,</p>
+              <p>пл. Свободы, д.7</p>
             </div>
-            <a className={styles.contacts__mail} href="mailto:bonbon@gmail.com">
-              <p>bonbon@gmail.com</p>
+            <a className={styles.contacts__mail} href="mailto:bon-bonnn@yandex.ru">
+              <p>bon-bonnn@yandex.ru</p>
             </a>
             <div className={styles.contacts__icons}>
               <a
