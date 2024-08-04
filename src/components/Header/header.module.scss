@@ -1,95 +1,101 @@
 @import '../../assets/styles/var';
 
 .header {
-    position: relative;
-    height: 80px;
+  position: relative;
+  min-height: 5rem;
 }
 
 .header__container {
-    height: 80px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 2;
-    background-color: $gray;
-    opacity: 90%;
-    display: flex;
-    align-items: center;
-    padding: 0 75px;
+  min-height: 5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  background-color: $gray;
+  opacity: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__leftContainer {
-    display: flex;
-    align-items: center;
-    gap: 300px;
-    padding-right: 320px;
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  padding-left: 5rem;
 }
 
 .header__rightContainer {
-    display: flex;
-    align-items: center;
-    gap: 80px;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding-right: 5rem;
 }
 
 .header__logo {
-    width: 128px;
+  width: 8rem;
 }
 
 .header__logo img {
-    width: 100%;
+  width: 100%;
 }
 
 .header__menu {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 200px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1.5rem;
 }
 
 .header__menuLink {
-    color: $darkGreen;
-    text-decoration: none;
-    font-family: $Montserrat-Medium, sans-serif;
-    font-size: 16px;
-    line-height: 19.36px;
-    letter-spacing: 0.01em;
+  color: $darkGreen;
+  text-decoration: none;
+  font-family: $Montserrat-Medium, sans-serif;
+  font-size: 16px;
 }
 
 .header__search {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .header__input {
-    width: 229px;
-    height: 28px;
-    border-radius: 20px;
-    outline: none;
-    border: 1px solid $darkGreen;
-    margin-left: 10px;
-    padding: 0 10px;
+  width: 14rem;
+  height: 2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: 1px solid $darkGreen;
+  padding: 0 1rem;
+  font-family: $Montserrat-Medium, sans-serif;
+  font-size: 16px;
 }
 
 .header__phone {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .header__phoneNumber {
-    margin-right: 30px;
-    font-family: $Montserrat-Medium, sans-serif;
-    font-size: 18px;
-    line-height: 21.78px;
-    letter-spacing: 0.01em;
+  font-family: $Montserrat-Medium, sans-serif;
+  font-size: 18px;
+  color: $darkGreen;
 }
 
 .header__icons {
-    width: 126px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .header__icon {
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon__heart {
+  fill: none;
 }

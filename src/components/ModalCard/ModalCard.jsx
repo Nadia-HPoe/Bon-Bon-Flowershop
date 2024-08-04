@@ -5,7 +5,6 @@ import Modal from 'react-modal';
 import { ModalCarousel } from './ModalCarousel';
 import modalcardStyles from '../ModalCard/modalcard.module.scss';
 import './modal.scss';
-
 const ModalCard = ({ isOpen, onClose, children }) => {
   const [value, setValue] = useState('S');
 
@@ -24,8 +23,7 @@ const ModalCard = ({ isOpen, onClose, children }) => {
     >
       <div className={modalcardStyles.container}>
         {children}
-        {/* <ModalCarousel /> */}
-        <img src={Image} alt="" className={modalcardStyles.image} />
+        <ModalCarousel />
         <div className={modalcardStyles.info}>
           <h2 className={modalcardStyles.title}>Название букета</h2>
           <p className={modalcardStyles.description}>
@@ -78,7 +76,7 @@ const ModalCard = ({ isOpen, onClose, children }) => {
               <Icons
                 className={modalcardStyles.icon__like}
                 name="heart"
-                size="40"
+                size="55"
                 color="#e457ad"
               />
             </button>

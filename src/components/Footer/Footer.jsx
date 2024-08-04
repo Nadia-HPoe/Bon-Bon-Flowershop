@@ -1,6 +1,7 @@
 import styles from "./Footer.module.scss";
 import { Icons } from "../Icons/Icons";
 import logo from "../../assets/logo/Bon_bon_logo.png";
+import flower from "../../assets/picture/flower.svg";
 
 function Footer() {
   return (
@@ -16,17 +17,17 @@ function Footer() {
           <div className={styles.contacts__wrapper}>
             <a
               className={styles.contacts__phone}
-              href="tel:+7 903 888 9977"
+              href="tel:+7 903 849 2777"
               aria-label="Позвонить по телефону +7 903 888 9977"
             >
-              <p>+7 903 888 9977</p>
+              <p>+7 903 849 2777</p>
             </a>
-            <a className={styles.contacts__mail} href="mailto:bonbon@gmail.com">
-              <p>bonbon@gmail.com</p>
+            <a className={styles.contacts__mail} href="bon-bonnn@yandex.ru">
+              <p>bon-bonnn@yandex.ru</p>
             </a>
             <div className={styles.contacts__address}>
-              <p>Нижний Новгород,</p>
-              <p>ул. Свободы, д.7</p>
+              <p>г. Нижний Новгород,</p>
+              <p>пл. Свободы, д.7</p>
             </div>
           </div>
         </div>
@@ -55,6 +56,9 @@ function Footer() {
             </a>
           </div>
         </div>
+        <div className={styles.footer__flower}>
+            <img src={flower} alt="flower" className={styles.flower} />
+          </div>
       </div>
       <hr className={styles.footer__divider} />
       <div className={styles.footer__conrainer__team}>
