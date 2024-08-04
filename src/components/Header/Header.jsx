@@ -3,6 +3,7 @@ import { Cart } from '../ModalCart/Cart';
 import { Icons } from '../Icons';
 import Logo from '../../assets/images/logo.svg';
 import styles from './header.module.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [cartIsOpen, setCartIsOpen] = useState(false);
@@ -13,24 +14,26 @@ const Header = () => {
         <div className={styles.header__container}>
           <div className={styles.header__leftContainer}>
             <div className={styles.header__logo}>
-              <img src={Logo} alt="logo" />
+              <Link to="/">
+                <img src={Logo} alt="logo" />
+              </Link>
             </div>
             <nav>
               <ul className={styles.header__menu}>
                 <li className={styles.header__menuItem}>
-                  <a href="#" className={styles.header__menuLink}>
+                  < Link to="/catalogue" className={styles.header__menuLink}>
                     Каталог
-                  </a>
+                  </Link>
                 </li>
                 <li className={styles.header__menuItem}>
-                  <a href="#" className={styles.header__menuLink}>
+                  <Link to="/about" className={styles.header__menuLink}>
                     О нас
-                  </a>
+                  </Link>
                 </li>
                 <li className={styles.header__menuItem}>
-                  <a href="#" className={styles.header__menuLink}>
+                  <Link to="/blog" className={styles.header__menuLink}>
                     Блог
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -63,8 +66,8 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </header>
-    </div>
+      </header >
+    </div >
   );
 };
 

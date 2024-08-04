@@ -1,20 +1,27 @@
-
-import { Header } from "./components/Header/Header";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Main } from "./pages/Main";
-import { FooterMain } from "./components/Footer/FooterMain";
 
 import "./App.module.scss";
 import styles from './App.module.scss';
+import Catalogue from "./pages/Catalogue/Catalogue";
+import { About } from "./pages/About";
+import { Blog } from "./pages/Blog";
 
 function App() {
   return (
-    <>
-      <div className={styles.app}>
-        <Header />
-        <Main />
-        <FooterMain />
-      </div>
-    </>
+    <Router>
+      <>
+        <div className={styles.app}>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/catalogue" element={<Catalogue />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+
+        </div>
+      </>
+    </Router>
   );
 }
 

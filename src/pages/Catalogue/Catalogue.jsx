@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import CatalogueCard from '../../components/CatalogueCard/CatalogueCard';
 import styles from '../Catalogue/Catalogue.module.scss';
+import { Header } from '../../components/Header/Header';
+import { Footer } from '../../components/Footer/Footer';
 
 
 const Catalogue = () => {
@@ -42,34 +44,38 @@ const Catalogue = () => {
   }
 
   return (
-    <div className={styles.catalogue}>
-      <h2 className={styles.h2__catalogue}>Каталог</h2>
-      <div className={styles.catalogue__categories}>
-        <ul className={styles.caregories}>
-          <li>Категория 1</li>
-          <li>Категория 2</li>
-          <li>Категория 3</li>
-          <li>Категория 4</li>
-          <li>Категория 5</li>
-          <li>Категория 6</li>
-        </ul>
-      </div>
+    <>
+      <Header />
+      <div className={styles.catalogue}>
+        <h2 className={styles.h2__catalogue}>Каталог</h2>
+        <div className={styles.catalogue__categories}>
+          <ul className={styles.caregories}>
+            <li>Категория 1</li>
+            <li>Категория 2</li>
+            <li>Категория 3</li>
+            <li>Категория 4</li>
+            <li>Категория 5</li>
+            <li>Категория 6</li>
+          </ul>
+        </div>
 
-      <div className={styles.catalogue__grid}>
-        <div className={styles.catalogue__product}>
-          {displayedProducts.map((product, index) => (
-            <CatalogueCard key={index} title={product.title} description={product.description} price={product.price} />
-          ))}
-        </div>
-        < div className={styles.catalogue__button}>
-          {showMoreButton && (
-            <button className={styles.btn__showmore} onClick={handleShowMore}>
-              Смотреть ещё
-            </button>
-          )}
+        <div className={styles.catalogue__grid}>
+          <div className={styles.catalogue__product}>
+            {displayedProducts.map((product, index) => (
+              <CatalogueCard key={index} title={product.title} description={product.description} price={product.price} />
+            ))}
+          </div>
+          < div className={styles.catalogue__button}>
+            {showMoreButton && (
+              <button className={styles.btn__showmore} onClick={handleShowMore}>
+                Смотреть ещё
+              </button>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
