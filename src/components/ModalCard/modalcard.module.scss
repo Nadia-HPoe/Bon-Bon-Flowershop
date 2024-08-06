@@ -1,11 +1,10 @@
-@use '../../assets//styles/var';
+@import '/src/assets/styles/var.scss';
 
 .container {
   display: grid;
   grid-template-columns: 47% 47% 5%;
   align-items: stretch;
   padding: 2rem 0.7rem 3.06rem 1.43rem;
-  font-family: 'Montserrat-SemiBold', sans-serif;
 }
 
 .images {
@@ -28,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: $Montserrat-Medium;
 }
 
 .button__close {
@@ -98,13 +98,15 @@
   cursor: pointer;
   border: none;
   color: #ffffff;
-  background-color: var.$pink;
+  background-color: $pink;
   border-radius: 30px;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-family: $Montserrat-Regular;
+  transition: 0.2s all;
   &:hover,
   &:active {
     border: none;
@@ -122,11 +124,13 @@
   }
 }
 .icon__like {
-  stroke: var.$pink;
+  stroke: $pink;
   fill: transparent;
+  transition: 0.2s all;
   &:hover,
   &:active {
-    fill: var.$pink;
+    fill: $pink;
     filter: drop-shadow(0 0 2px rgba(222, 102, 192, 0.7));
+    transition: 0.2s all;
   }
 }

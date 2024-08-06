@@ -1,4 +1,4 @@
-@use '../../assets/styles/var';
+@import '/src/assets/styles/var.scss';
 
 .modal-overlay {
   position: fixed;
@@ -41,7 +41,7 @@
   align-items: center;
   width: 100%;
   max-width: 62.5rem;
-  background-color: var.$white;
+  background-color: $white;
   filter: drop-shadow(0 0 10px rgba(222, 102, 192, 0.7));
   transform: translateY(50px);
   transition: transform 0.3s;
