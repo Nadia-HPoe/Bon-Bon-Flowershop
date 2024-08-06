@@ -26,6 +26,7 @@ function Main() {
       <Container>
         <ReadyBouquet />
         <Categories />
+        <ReadyBouquet />
       </Container>
       <FooterMain />
     </div>
