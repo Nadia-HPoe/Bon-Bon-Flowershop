@@ -1,0 +1,47 @@
+$Montserrat-Light: 'Montserrat-Light';
+$Montserrat-Medium: 'Montserrat-Medium';
+$Montserrat-Regular: 'Montserrat-Regular';
+$Montserrat-SemiBold: 'Montserrat-SemiBold';
+$Montserrat-Bold: 'Montserrat-Bold';
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../fonts/Montserrat-Light.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+$white: #fff;
+$pink: #e457ad;
+$green: #00554e;
+$darkGreen: #042423;
+$biege: #ffebce;
+$gray: #727272;

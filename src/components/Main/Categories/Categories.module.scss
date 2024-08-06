@@ -1,4 +1,4 @@
-@import "../../../assets/styles/var.scss";
+@import '/src/assets/styles/var.scss';
 
 .caregories_container {
   max-width: 80rem;
@@ -6,7 +6,7 @@
 
   .caregories_wrapper {
     h2 {
-      font-family: $Montserrat-Bold, sans-serif;
+      font-family: $Montserrat-Light;
     }
   }
 
@@ -22,11 +22,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url("../../../assets/images/bonbon-main_categories.png");
+      background-image: url('../../../assets/images/bonbon-main_categories.png');
       color: aliceblue;
       font-size: 2rem;
       transition: 0.5s all;
-      font-family: $Montserrat-SemiBold, sans-serif;
+      font-family: $Montserrat-Bold, sans-serif;
 
       &.faded {
         opacity: 0.65;
