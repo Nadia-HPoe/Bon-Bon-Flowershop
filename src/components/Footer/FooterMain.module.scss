@@ -5,10 +5,20 @@
   background-color: rgb(8, 69, 61);
   color: $biege;
 }
+.footer__flower {
+display: flex;
+position: absolute;
+height: 80%;
+}
+.flower {
+  width: 70%;
+  opacity: 0.8;
+  margin-left: 30%;
+  margin-top: -35%;
+}
 
 .footer_img {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .footer__container {
@@ -16,25 +26,29 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-top: 30px;
 }
 .footer__contacts {
   display: flex;
   flex-direction: column;
   margin-left: 20%;
   align-items: flex-start;
+  position: inherit;
 }
 .footer__map__wrapper {
   position: relative;
   overflow: hidden;
   margin-left: 20%;
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
 }
 
-.title__wrapper {
-  text-align: center;
+.titles__wrapper {
+  margin-top: 5%;
 }
 
 .footer__title {
-  margin-top: 10px;
   font-size: 1.5em;
   font-family: $Montserrat-Bold;
   margin: 0;
@@ -50,6 +64,9 @@
 
 .contacts__address,
 .contacts__working__hours {
+  font-family: $Montserrat-Medium;
+  font-size: 20px;
+  font-weight: 700;
   p {
     margin: 0;
     padding: 0;
@@ -88,8 +105,10 @@
   color: $biege;
 }
 .contacts__mail {
-  font-size: 0.8em;
   margin-bottom: 10px;
+  font-family: $Montserrat-Medium;
+  font-size: 20px;
+  font-weight: 700;
 }
 .footer__divider {
   width: 100%;

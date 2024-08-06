@@ -57,18 +57,24 @@
 
 .contacts__wrapper {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
+  font-family: $Montserrat-Medium;
 }
-
+.contacts__phone{
+  padding: 10px;
+}
+.contacts__working__hours__title{
+  padding: 10px;
+}
 .contacts__phone,
 .contacts__mail,
 .contacts__address,
 .contacts__working__hours,
 .contacts__icons {
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 15px;
+  font-family: $Montserrat-Medium;
 }
-
 .contacts__phone,
 .contacts__mail:hover {
   cursor: pointer;
@@ -77,7 +83,7 @@
 
 .contacts__working__hours {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 13px;
 }
 
 .contacts__icons {
