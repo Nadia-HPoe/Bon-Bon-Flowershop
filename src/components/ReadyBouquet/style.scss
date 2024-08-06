@@ -1,0 +1,7 @@
+/* Используется для переопределения классов слайдера */
+@import '/src/assets/styles/var.scss';
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $pink;
+}

@@ -11,6 +11,7 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/effect-coverflow';
 
 import styles from './ReadyBouquet.module.scss';
+import './style.scss';
 
 function ReadyBouquet() {
   const bouquet = {
