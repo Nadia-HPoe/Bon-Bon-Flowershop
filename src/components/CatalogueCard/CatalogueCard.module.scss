@@ -1,0 +1,50 @@
+.card__pack {
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    width: 287px;
+    height: 450px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.11);
+    padding: 25px;
+    row-gap: 10px;
+}
+
+.card__title,
+.card__description {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card__image {
+    width: 240px;
+}
+
+.card__value {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.card__price {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card__btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card__button {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #e457ad;
+    border-radius: 30px;
+    padding: 13px 30px;
+    cursor: pointer;
+}
