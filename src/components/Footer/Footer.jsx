@@ -1,7 +1,7 @@
-import styles from "./Footer.module.scss";
-import { Icons } from "../Icons/Icons";
-import logo from "../../assets/logo/Bon_bon_logo.png";
-import flower from "../../assets/picture/flower.svg";
+import styles from './Footer.module.scss';
+import { Icons } from '../Icons/Icons';
+import logo from '../../assets/logo/Bon_bon_logo.png';
+import flower from '../../assets/picture/flower.svg';
 
 function Footer() {
   return (
@@ -33,9 +33,7 @@ function Footer() {
         </div>
         <div className={styles.footer__contacts}>
           <div className={styles.contacts__working__hours}>
-            <p className={styles.contacts__working__hours__title}>
-              График работы:
-            </p>
+            <p className={styles.contacts__working__hours__title}>График работы:</p>
             <p className={styles.contacts__working__hours__text}>
               <p>Пн-Пт с 9:00 до 20:00</p>
               <p> Сб-Вс с 10:00 до 18:00</p>
@@ -48,17 +46,14 @@ function Footer() {
             >
               <Icons name="whatsapp" size="40" color="#ffebce" />
             </a>
-            <a
-              className={styles.contacts__vk__icon}
-              href="https://vk.com/bon_bon52"
-            >
+            <a className={styles.contacts__vk__icon} href="https://vk.com/bon_bon52">
               <Icons name="vk" size="40" color="#ffebce" />
             </a>
           </div>
         </div>
         <div className={styles.footer__flower}>
-            <img src={flower} alt="flower" className={styles.flower} />
-          </div>
+          <img src={flower} alt="flower" className={styles.flower} />
+        </div>
       </div>
       <hr className={styles.footer__divider} />
       <div className={styles.footer__conrainer__team}>

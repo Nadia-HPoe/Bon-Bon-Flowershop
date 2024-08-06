@@ -1,7 +1,7 @@
-import styles from "./FooterMain.module.scss";
-import { Icons } from "../Icons/Icons";
-import baner from "../../assets/images/bonbon-main_footer.png";
-import flower from "../../assets/picture/flower.svg";
+import styles from './FooterMain.module.scss';
+import { Icons } from '../Icons/Icons';
+import baner from '../../assets/images/bonbon-main_footer.png';
+import flower from '../../assets/picture/flower.svg';
 
 function FooterMain() {
   return (
@@ -9,14 +9,14 @@ function FooterMain() {
       <img src={baner} alt="bonbon-main_footer" className={styles.footer_img} />
       <div className={styles.footer__container}>
         <div className={styles.footer__map__wrapper}>
-          <div style={{ position: "relative", overflow: "hidden" }}>
+          <div style={{ position: 'relative', overflow: 'hidden' }}>
             <a
               href="https://yandex.ru/maps/org/bon_bon/217049081924/?utm_medium=mapframe&utm_source=maps"
               style={{
-                color: "#eee",
-                fontSize: "12px",
-                position: "absolute",
-                top: "0px",
+                color: '#eee',
+                fontSize: '12px',
+                position: 'absolute',
+                top: '0px',
               }}
             >
               Bon-Bon
@@ -24,10 +24,10 @@ function FooterMain() {
             <a
               href="https://yandex.ru/maps/47/nizhny-novgorod/category/flowers_and_bouquets_delivery/184108319/?utm_medium=mapframe&utm_source=maps"
               style={{
-                color: "#eee",
-                fontSize: "12px",
-                position: "absolute",
-                top: "14px",
+                color: '#eee',
+                fontSize: '12px',
+                position: 'absolute',
+                top: '14px',
               }}
             >
               Доставка цветов и букетов в Нижнем Новгороде
@@ -35,10 +35,10 @@ function FooterMain() {
             <a
               href="https://yandex.ru/maps/47/nizhny-novgorod/category/flower_shop/184108325/?utm_medium=mapframe&utm_source=maps"
               style={{
-                color: "#eee",
-                fontSize: "12px",
-                position: "absolute",
-                top: "28px",
+                color: '#eee',
+                fontSize: '12px',
+                position: 'absolute',
+                top: '28px',
               }}
             >
               Магазин цветов в Нижнем Новгороде
@@ -49,12 +49,12 @@ function FooterMain() {
               height="400"
               frameBorder="1"
               allowFullScreen="true"
-              style={{ position: "relative" }}
+              style={{ position: 'relative' }}
             ></iframe>
           </div>
         </div>
         <div className={styles.footer__contacts}>
-        <div className={styles.footer__flower}>
+          <div className={styles.footer__flower}>
             <img src={flower} alt="flower" className={styles.flower} />
           </div>
           <div className={styles.titles__wrapper}>
@@ -67,12 +67,10 @@ function FooterMain() {
               href="tel:+7 903 849 2777"
               aria-label="Позвонить по телефону +7 903 888 9977"
             >
-              <p>+7 903 849 2777</p> 
+              <p>+7 903 849 2777</p>
             </a>
             <div className={styles.contacts__working__hours}>
-              <p className={styles.contacts__working__hours__title}>
-                График работы:
-              </p>
+              <p className={styles.contacts__working__hours__title}>График работы:</p>
               <p className={styles.contacts__working__hours__text}>
                 <p>Пн-Пт с 9:00 до 20:00</p>
                 <p>Сб-Вс с 10:00 до 18:00</p>
@@ -97,16 +95,8 @@ function FooterMain() {
                   color="#ffebce"
                 />
               </a>
-              <a
-                className={styles.contacts__vk__icon}
-                href="https://vk.com/bon_bon52"
-              >
-                <Icons
-                  className={styles.contacts__vk__icon}
-                  name="vk"
-                  size="40"
-                  color="#ffebce"
-                />
+              <a className={styles.contacts__vk__icon} href="https://vk.com/bon_bon52">
+                <Icons className={styles.contacts__vk__icon} name="vk" size="40" color="#ffebce" />
               </a>
             </div>
           </div>
