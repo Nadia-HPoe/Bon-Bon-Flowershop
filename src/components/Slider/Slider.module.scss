@@ -1,0 +1,27 @@
+@import '/src/assets/styles/var.scss';
+
+.swiper {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.slide {
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 6px 4px #00000014;
+}
+
+.bullet {
+  width: 16px;
+  height: 16px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 1px solid $gray;
+  opacity: 1;
+  display: inline-block;
+}
+
+.bullet__active {
+  border-color: $pink;
+  background-color: $pink;
+}
