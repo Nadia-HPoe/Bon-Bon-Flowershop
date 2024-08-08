@@ -2,7 +2,7 @@
 
 .swiper {
   width: 100%;
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .slide {
@@ -17,7 +17,6 @@
   margin: 0 5px;
   border-radius: 50%;
   border: 1px solid $gray;
-
   opacity: 1;
   display: inline-block;
 }
@@ -25,10 +24,4 @@
 .bullet__active {
   border-color: $pink;
   background-color: $pink;
-}
-
-.swiper {
-  .swiper-pagination {
-    bottom: 10px; // Adjust the position of the pagination bullets
-  }
 }

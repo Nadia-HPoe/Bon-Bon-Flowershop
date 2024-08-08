@@ -5,9 +5,14 @@
   height: 100%;
   padding: 25px;
   gap: 25px;
+  position: relative;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  background-color: #fff;
 }
 
 .card__image {
+  display: block;
   width: fit-content;
   width: 100%;
 }
