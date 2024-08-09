@@ -10,7 +10,6 @@ function Blog() {
       </div>
       <Footer />
     </>
-
   );
 }
 

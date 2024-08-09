@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Header } from './components/Header/Header';
+// import { Header } from './components/Header/Header';
 import { Main } from './pages/Main';
-import { FooterMain } from './components/Footer/FooterMain';
+// import { FooterMain } from './components/Footer/FooterMain';
 import './App.module.scss';
 import styles from './App.module.scss';
 import Catalogue from "./pages/Catalogue/Catalogue";

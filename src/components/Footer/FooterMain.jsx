@@ -1,6 +1,8 @@
 import styles from './FooterMain.module.scss';
 import { Icons } from '../Icons/Icons';
 import baner from '../../assets/images/bonbon-main_footer.png';
+import flower from '../../assets/picture/flower.svg';
+
 
 function FooterMain() {
   return (
@@ -53,6 +55,9 @@ function FooterMain() {
           </div>
         </div>
         <div className={styles.footer__contacts}>
+          <div className={styles.footer__flower}>
+            <img src={flower} alt="flower" className={styles.flower} />
+          </div>
           <div className={styles.titles__wrapper}>
             <p className={styles.footer__title}>BonBon</p>
             <p className={styles.footer__title}>flowers boutique</p>
