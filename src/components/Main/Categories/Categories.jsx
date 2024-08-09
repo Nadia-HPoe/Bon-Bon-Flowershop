@@ -1,4 +1,4 @@
-import styles from "./Categories.module.scss";
+import styles from './Categories.module.scss';
 
 const Categories = () => {
   const handleMouseEnter = (e) => {

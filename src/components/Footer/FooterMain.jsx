@@ -3,6 +3,7 @@ import { Icons } from '../Icons/Icons';
 import baner from '../../assets/images/bonbon-main_footer.png';
 import flower from '../../assets/picture/flower.svg';
 
+
 function FooterMain() {
   return (
     <footer className={styles.footer}>
