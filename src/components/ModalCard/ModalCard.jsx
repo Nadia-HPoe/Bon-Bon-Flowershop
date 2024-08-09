@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Icons } from '../../components/Icons';
-import Image from '../../assets/images/bonbon-image1.jpg';
 import Modal from 'react-modal';
 import { ModalCarousel } from './ModalCarousel';
 import modalcardStyles from '../ModalCard/modalcard.module.scss';
