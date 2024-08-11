@@ -1,0 +1,64 @@
+@import '../../assets/styles/var';
+
+.blog {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-items: center;
+    column-gap: 2rem
+}
+
+.blog__title {
+    font-family: $Montserrat-Bold, sans-serif;
+    font-size: 40px;
+    padding: 2rem;
+}
+
+.blog__categories {
+    grid-column: 1 /2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+
+.blog li {
+    font-family: $Montserrat-Bold, sans-serif;
+    font-size: 30px;
+    line-height: 75px;
+    list-style: none;
+    padding: 10px;
+}
+
+.blog__cards {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.blog__button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn__showmore {
+    background-color: $pink;
+    font-family: $Montserrat-Bold, sans-serif;
+    color: $white;
+    margin: 1.5rem;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.5rem;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.21);
+    cursor: pointer;
+}
