@@ -2,31 +2,38 @@
 
 .caregories_container {
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 6rem auto;
 
   .caregories_wrapper {
     h2 {
       font-family: $Montserrat-Light;
+      font-size: 2rem;
+      margin-bottom: 3rem;
     }
   }
 
   .caregories {
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
 
     .caregories_items {
-      width: 25rem;
-      height: 25rem;
+      flex-basis: calc(33.33% - 0.5rem);
+      height: 26rem;
       display: flex;
       justify-content: center;
       align-items: center;
       background-image: url('../../../assets/images/bonbon-main_categories.png');
+      margin-bottom: 0.5rem;
+      background-size: cover;
+      background-position: center;
       color: aliceblue;
       font-size: 2rem;
       transition: 0.5s all;
-      font-family: $Montserrat-Bold, sans-serif;
+      font-family: $Montserrat-Light, sans-serif;
 
       &.faded {
         opacity: 0.65;
