@@ -164,6 +164,7 @@
 }
 
 .cart-list__product_delete-icon {
+  cursor: pointer;
   transition: 0.5s all;
   &:hover,
   &:active {
