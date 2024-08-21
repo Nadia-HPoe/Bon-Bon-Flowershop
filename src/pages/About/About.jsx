@@ -1,7 +1,7 @@
 import { Header } from '../../components/Header/Header';
 import { Footer } from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
-import Image from '../../assets/images/bon-bon-about-us1.jpg';
+import Image from '../../assets/images/bonbon-about.png';
 import styles from './about.module.scss';
 
 const About = () => {
