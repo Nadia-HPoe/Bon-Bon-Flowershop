@@ -25,9 +25,9 @@ const Title = () => {
           sequence={[
             // Same substring at the start will only be typed out once, initially
             'Доставка цветов в Нижнем Новгороде',
-            2000, // wait 1s before replacing "Mice" with "Hamsters"
-            'Свадебные букеты, праздничное оформление, сухоцветы',
-            2000,
+            15000, // wait 1s before replacing "Mice" with "Hamsters"
+            // 'Свадебные букеты, праздничное оформление, сухоцветы',
+            // 2000,
             // 'Оформление цветами в Нижнем Новгороде',
             // 1000,
             // 'Сухоцветы в Нижнем Новгороде',

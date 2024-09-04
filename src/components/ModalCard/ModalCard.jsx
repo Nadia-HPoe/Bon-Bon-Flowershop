@@ -29,9 +29,7 @@ const ModalCard = ({ isOpen, onClose, children }) => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet urna at purus
             ullamcorper, non iaculis diam sagittis. Nulla mi orci, feugiat eu vulputate id,
             dignissim sed ex. Integer cursus luctus odio ut condimentum. Integer ullamcorper sed
-            ipsum id commodo. Morbi iaculis risus ac diam dictum hendrerit. Fusce suscipit risus
-            sem, a porttitor libero venenatis ut. Integer vehicula, nulla tincidunt laoreet varius,
-            sem elit laoreet sem, eget pretium ante dui ut magna.
+            ipsum id commodo. Morbi iaculis risus ac diam dictum hendrerit.
           </p>
           <form className={modalcardStyles.form}>
             <div className={modalcardStyles.form__container}>
