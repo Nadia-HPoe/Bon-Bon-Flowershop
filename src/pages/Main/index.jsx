@@ -9,6 +9,7 @@ import styles from '../../components/CarouselCard/CarouselCard.module.scss';
 import { Header } from '../../components/Header/Header';
 import { FooterMain } from '../../components/Footer/FooterMain';
 import Bestsellers from '../../components/Main/Bestsellers/Bestsellers';
+import Reviews from '../../components/Main/Reviews/Reviews';
 
 function Main() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -28,6 +29,7 @@ function Main() {
         <ReadyBouquet />
         <Categories />
         <Bestsellers />
+        <Reviews />
       </Container>
       <FooterMain />
     </div>
