@@ -1,12 +1,19 @@
 import styles from './FooterMain.module.scss';
 import { Icons } from '../Icons/Icons';
-import baner from '../../assets/images/bonbon-main_footer.png';
+
 import flower from '../../assets/picture/flower.svg';
 
 function FooterMain() {
   return (
     <footer className={styles.footer}>
-      <img src={baner} alt="bonbon-main_footer" className={styles.footer_img} />
+      <div className={styles.footer_text_block}>
+        <p className={styles.footer_text}>
+          Мы бережно собираем ваши эмоции в букеты и композиции, все наши работы собраны с душой и любовью!
+        </p>
+        <p className={styles.footer_text}>
+          Говорят, что нет вечного двигателя. А он есть. И имя ему - любовь!
+        </p>
+      </div>
       <div className={styles.footer__container}>
         <div className={styles.footer__map__wrapper}>
           <div style={{ position: 'relative', overflow: 'hidden' }}>
@@ -54,14 +61,12 @@ function FooterMain() {
           </div>
         </div>
         <div className={styles.footer__contacts}>
-          <div className={styles.footer__flower}>
-            <img src={flower} alt="flower" className={styles.flower} />
-          </div>
+          
+          <div className={styles.contacts__wrapper}>
           <div className={styles.titles__wrapper}>
             <p className={styles.footer__title}>Bon-Bon</p>
             <p className={styles.footer__title}>flowers boutique</p>
           </div>
-          <div className={styles.contacts__wrapper}>
             <a
               className={styles.contacts__phone}
               href="tel:+7 903 849 2777"
@@ -92,32 +97,36 @@ function FooterMain() {
                   className={styles.contacts__whatsapp__icon}
                   name="whatsapp"
                   size="40"
-                  color="#ffebce"
+                  color="#676767"
                 />
               </a>
               <a className={styles.contacts__vk__icon} href="https://vk.com/bon_bon52">
-                <Icons className={styles.contacts__vk__icon} name="vk" size="40" color="#ffebce" />
+                <Icons className={styles.contacts__vk__icon} name="vk" size="40" color="#676767" />
               </a>
             </div>
           </div>
+          <div className={styles.policy__wrapper}>
+            <a className={styles.policy__offer} href="#">
+              <p>Каталог</p>
+            </a>
+            <a className={styles.policy__offer} href="#">
+              <p>О нас</p>
+            </a>
+            <a className={styles.policy__offer} href="#">
+              <p>Блог</p>
+            </a>
+            <a className={styles.policy__offer} href="#">
+              <p>Оферта</p>
+            </a>
+            <a className={styles.policy__policy} href="#">
+              <p>Политика</p>
+            </a>
+            <a className={styles.policy__delivery__payment} href="#">
+              <p>Доставка и оплата</p>
+            </a>
+          </div>
         </div>
-      </div>
-      <hr className={styles.footer__divider} />
-      <div className={styles.footer__container__team}>
-        <div className={styles.policy__wrapper}>
-          <a className={styles.policy__offer} href="#">
-            <p>Оферта</p>
-          </a>
-          <a className={styles.policy__policy} href="#">
-            <p>Политика</p>
-          </a>
-          <a className={styles.policy__delivery__payment} href="#">
-            <p>Доставка и оплата</p>
-          </a>
-        </div>
-        <a className={styles.contacts__team} href="#">
-          <p>Ⓒ Команда</p>
-        </a>
+        
       </div>
     </footer>
   );
