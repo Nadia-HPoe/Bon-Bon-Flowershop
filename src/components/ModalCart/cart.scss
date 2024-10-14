@@ -107,11 +107,12 @@
 .cart-list__product_card {
   padding: 2rem;
   display: flex;
-  gap: 5rem;
+  justify-content: space-around;
+  gap: 3rem;
 }
 
 .cart-list__product_image {
-  width: 25%;
+  width: 55%;
 }
 
 .cart-list__product_info {
@@ -158,12 +159,12 @@
   line-height: 24px;
 }
 
-.cart-list__product_delete {
+.cart-list__product_like {
   border: none;
   background: none;
 }
 
-.cart-list__product_delete-icon {
+.cart-list__product_like-icon {
   cursor: pointer;
   transition: 0.5s all;
   &:hover,
