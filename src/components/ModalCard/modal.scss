@@ -42,7 +42,6 @@
   width: 100%;
   max-width: 62.5rem;
   background-color: $white;
-  filter: drop-shadow(0 0 10px rgba(222, 102, 192, 0.7));
   transform: translateY(50px);
   transition: transform 0.3s;
 }
@@ -65,4 +64,5 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-height: 358px;
 }
