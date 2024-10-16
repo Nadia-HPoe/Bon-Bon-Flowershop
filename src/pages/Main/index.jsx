@@ -10,7 +10,6 @@ import { Header } from '../../components/Header/Header';
 import { FooterMain } from '../../components/Footer/FooterMain';
 import Bestsellers from '../../components/Main/Bestsellers/Bestsellers';
 import Reviews from '../../components/Main/Reviews/Reviews';
-import PhotoCarousel from '../../components/Main/PhotoCarousel/PhotoCarousel';
 
 function Main() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -32,7 +31,6 @@ function Main() {
         <Bestsellers />
         <Reviews />
       </Container>
-      <PhotoCarousel />
       <FooterMain />
     </div>
   );
