@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Icons } from '../../components/Icons';
-import Image from '../../assets/images/bonbon-image1.jpg';
 import Modal from 'react-modal';
 import { ModalCarousel } from './ModalCarousel';
 import modalcardStyles from '../ModalCard/modalcard.module.scss';
@@ -25,66 +24,35 @@ const ModalCard = ({ isOpen, onClose, children }) => {
         {children}
         <ModalCarousel />
         <div className={modalcardStyles.info}>
-          <h2 className={modalcardStyles.title}>Название букета</h2>
-          <p className={modalcardStyles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet urna at purus
-            ullamcorper, non iaculis diam sagittis. Nulla mi orci, feugiat eu vulputate id,
-            dignissim sed ex. Integer cursus luctus odio ut condimentum. Integer ullamcorper sed
-            ipsum id commodo. Morbi iaculis risus ac diam dictum hendrerit. Fusce suscipit risus
-            sem, a porttitor libero venenatis ut. Integer vehicula, nulla tincidunt laoreet varius,
-            sem elit laoreet sem, eget pretium ante dui ut magna.
-          </p>
-          <form className={modalcardStyles.form}>
-            <div className={modalcardStyles.form__container}>
-              <input
-                type="radio"
-                name="radio"
-                value="S"
-                checked={value == 'S' ? true : false}
-                onChange={changeSize}
-              />
-              <label htmlFor="S">S</label>
-            </div>
-            <div className={modalcardStyles.form__container}>
-              <input
-                type="radio"
-                name="radio"
-                value="M"
-                checked={value == 'M' ? true : false}
-                onChange={changeSize}
-              />
-              <label htmlFor="M">M</label>
-            </div>
-            <div className={modalcardStyles.form__container}>
-              <input
-                type="radio"
-                name="radio"
-                value="L"
-                checked={value == 'L' ? true : false}
-                onChange={changeSize}
-              />
-              <label htmlFor="L">L</label>
-            </div>
-          </form>
-
-          <p className={modalcardStyles.price}>2 500 ₽</p>
-          <div className={modalcardStyles.buttons}>
-            <button className={modalcardStyles.button__order} onClick={() => onClose()}>
-              Заказать
-            </button>
+          <div className={modalcardStyles.top}>
+            <h2 className={modalcardStyles.title}>Название букета</h2>
+            <p className={modalcardStyles.description}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet urna at purus
+              ullamcorper, non iaculis diam sagittis. Nulla mi orci, feugiat eu vulputate id,
+              dignissim sed ex. Integer cursus luctus odio ut condimentum. Integer ullamcorper sed
+              ipsum id commodo. Morbi iaculis risus ac diam dictum hendrerit. Fusce suscipit risus
+              sem, a porttitor libero venenatis ut. Integer vehicula, nulla tincidunt laoreet
+              varius, sem elit laoreet sem, eget pretium ante dui ut magna.
+            </p>
+          </div>
+          <div className={modalcardStyles.bottom}>
+            <p className={modalcardStyles.price}>2 500 ₽</p>
             <button className={modalcardStyles.button__like}>
               <Icons
                 className={modalcardStyles.icon__like}
                 name="heart"
                 size="55"
-                color="#e457ad"
+                color="#FAE8F1"
               />
             </button>
           </div>
+          <button className={modalcardStyles.button__order} onClick={() => onClose()}>
+            Заказать
+          </button>
         </div>
 
         <button className={modalcardStyles.button__close} onClick={() => onClose()}>
-          <Icons className={modalcardStyles.icon} name="cross" size="28" color="gray" />
+          <Icons className={modalcardStyles.icon} name="cross" size="18" color="black" />
         </button>
       </div>
     </Modal>

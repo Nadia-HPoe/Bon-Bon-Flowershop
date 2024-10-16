@@ -1,0 +1,13 @@
+/* Используется для переопределения классов слайдера */
+@import '/src/assets/styles/var.scss';
+
+.swiper-slide {
+  position: relative;
+  width: 320px;
+  // aspect-ratio: 3/4;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $pink;
+}
