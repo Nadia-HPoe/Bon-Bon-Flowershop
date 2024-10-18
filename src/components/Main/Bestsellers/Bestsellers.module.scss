@@ -1,7 +1,10 @@
-@import '/src/assets/styles/var.scss';
+@import '../../../assets/styles/var';
 
-.ready_bouquet__title {
+.bestsellers__title {
   font-family: $Montserrat-Light;
   font-size: 2rem;
-  margin-bottom: 3rem;
+  font-weight: 300;
+  line-height: 39.01px;
+  letter-spacing: 0.01em;
+  color: $dark-gray;
 }

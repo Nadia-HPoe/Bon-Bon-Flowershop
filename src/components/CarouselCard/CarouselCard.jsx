@@ -1,11 +1,11 @@
 import styles from './CarouselCard.module.scss';
 
-export default function CarouselCard({ price, img }) {
+export default function CarouselCard({ price, img, title }) {
   return (
-    <div className={styles.card__wrapper}>
+    <div className={styles.card}>
       <img className={styles.card__image} src={img} alt="Bouquet" />
-      <p className={styles.card__price}>{price} руб</p>
-      <button className={styles.card__button}>Купить</button>
+      <h4 className={styles.card__title}>{title}</h4>
+      <button className={styles.card__button}>{price} ₽</button>
     </div>
   );
 }
