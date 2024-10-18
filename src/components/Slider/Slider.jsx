@@ -14,7 +14,7 @@ export default function Slider({ items }) {
     <Swiper
       effect={'coverflow'}
       grabCursor={true}
-      initialSlide={5}
+      initialSlide={2}
       centeredSlides={true}
       preventClicks={true}
       slidesPerView={'auto'}
