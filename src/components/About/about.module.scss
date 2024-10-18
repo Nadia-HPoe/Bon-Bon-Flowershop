@@ -1,0 +1,124 @@
+@import '../../assets/styles/var';
+
+.team {
+  padding: 14.625rem 14.93rem 4.5625rem;
+  display: flex;
+  flex-direction: column;
+  font-family: $Montserrat-Regular;
+  color: black;
+}
+.advantages {
+  padding: 5.375rem 14.75rem 5.25rem;
+  font-family: $Montserrat-Regular;
+  background-color: $pink;
+}
+
+.creation {
+  padding: 12.6875rem;
+  font-family: $Montserrat-Regular;
+}
+
+.title {
+  padding: 2rem 9rem;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.05em;
+}
+
+.team_container {
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  align-items: center;
+  grid-gap: 4.8125rem;
+}
+.team_image {
+  width: 100%;
+  height: auto;
+  max-width: 585px;
+}
+
+.team_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+}
+
+.team_subtitle {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: $dust-pink;
+}
+
+.paragraph {
+  padding-top: 1.6875rem;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #0d1616;
+}
+.team_logo {
+  padding-top: 4rem;
+  width: 100%;
+  height: auto;
+  max-width: 183px;
+}
+
+.list {
+  display: flex;
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+  max-width: 192px;
+}
+
+.creation_info {
+  padding: 2rem;
+  background-color: $pink;
+}
+
+.creation_subtitle {
+  padding-bottom: 1.75rem;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  width: 55%;
+}
+
+.creation_image {
+  float: right;
+  width: 100%;
+  height: auto;
+  max-width: 489px;
+}
+.creation_paragraph,
+.creation_paragraph2 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+}
+.creation_paragraph2 {
+  text-indent: 30px;
+}
+.creation_logo {
+  max-width: 319px;
+}
+@media (max-width: 1700px) {
+  .team_subtitle {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

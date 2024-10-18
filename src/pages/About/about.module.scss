@@ -1,16 +1,15 @@
 @import '../../assets/styles/var.scss';
 
 .container {
-  padding-left: 2rem;
+  padding-left: 4rem;
   display: flex;
-  // justify-content: space-around;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: $darkGreen;
 }
 
 .info {
-  width: 40%;
+  width: 55%;
 }
 .image {
   padding: 4rem;
@@ -21,7 +20,7 @@
 
 .subtitle {
   padding-top: 2rem;
-  font-family: $Montserrat-Light;
+  font-family: $Montserrat-Medium;
   font-size: 32px;
   line-height: 42px;
   letter-spacing: 0.01em;
@@ -43,8 +42,8 @@
 
 .title {
   padding: 4rem 0;
-  // text-align: center;
-  font-family: $Montserrat-Light;
+  text-align: center;
+  font-family: $Montserrat-Medium;
   font-size: 38px;
   line-height: 40px;
 }
