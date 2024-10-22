@@ -65,7 +65,7 @@ function FooterMain() {
           <div className={styles.contacts__wrapper}>
           <div className={styles.titles__wrapper}>
             <p className={styles.footer__title}>Bon-Bon</p>
-            <p className={styles.footer__title}>flowers boutique</p>
+            <p className={styles.footer__title}>Цветочный бутик</p>
           </div>
             <a
               className={styles.contacts__phone}
