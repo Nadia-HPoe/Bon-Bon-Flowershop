@@ -33,14 +33,20 @@ $Montserrat-Bold: 'Montserrat-Bold';
 }
 
 @font-face {
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat-SemiBold';
   src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
-$white: #fff;
-$pink: #e457ad;
+$white: #ffffff;
+$pink: #fae8f1;
+$light-pink: #f9e9f1;
+$dust-pink: #c99db0;
+$bright-pink: #ff0090;
+$light-gray: #f4f0f0;
+$dark-gray: #0d1616;
+
 $green: #00554e;
 $darkGreen: #042423;
 $biege: #ffebce;

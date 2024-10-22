@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Композиция с розами и диантусами в коробке",
+    "price": 9000,
+    "category": "author",
+    "img": "https://i.ibb.co/v4jMh6h/flower-img1.jpg",
+    "description": "velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam",
+    "bestseller": false,
+    "liked": false
+  },
+  {
+    "id": 2,
+    "title": "Композиция с розами и диантусами в коробке",
+    "price": 10000,
+    "category": "boxes",
+    "img": "https://i.ibb.co/D4JsdZf/flower-img2.jpg",
+    "description": "accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis",
+    "bestseller": true,
+    "liked": false
+  },
+  {
+    "id": 3,
+    "title": "Композиция с розами и диантусами в коробке",
+    "price": 10000,
+    "category": "wedding",
+    "img": "https://i.ibb.co/z8YHPJr/flower-img3.jpg",
+    "description": "amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at",
+    "bestseller": false,
+    "liked": false
+  },
+  {
+    "id": 4,
+    "title": "Композиция с розами и диантусами в коробке",
+    "price": 5490,
+    "category": "author",
+    "img": "https://i.ibb.co/0qBb0BD/flower-img4.jpg",
+    "description": "aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique",
+    "bestseller": true,
+    "liked": false
+  },
+  {
+    "id": 5,
+    "title": "Композиция с розами и диантусами в коробке",
+    "price": 5990,
+    "category": "boxes",
+    "img": "https://i.ibb.co/4FsWNjk/flower-img5.jpg",
+    "description": "metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque",
+    "bestseller": true,
+    "liked": false
+  }
+]
