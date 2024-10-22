@@ -24,10 +24,10 @@
 .footer__map__wrapper {
   position: relative;
   overflow: hidden;
-  margin-left: 35%;
+  margin-left: 15%;
   margin-top: 3%;
-  width: 760px;
-  height: 470px;
+  width: 550px;
+  height: 430px;
 }
 
 .titles__wrapper {
@@ -129,15 +129,17 @@
 }
 .footer_text{
   display: flex;
+  text-align: center;
   color: #C99DB0;
   font-family: $Montserrat-Light;
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 29px;
+  line-height: 41.45px;
+  font-weight: 400;
   margin-top: 4%;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
 @media (max-width: 1200px) {
   .footer__container {
     grid-template-columns: 1fr;
