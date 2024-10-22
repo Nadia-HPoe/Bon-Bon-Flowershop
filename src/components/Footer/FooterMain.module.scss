@@ -3,7 +3,7 @@
 .footer {
   width: 100vw;
   background-color: #EAEAEA;
-  color: #292a2b;
+  color: #0D1616;
   padding-top: 10%;
 }
 
@@ -24,18 +24,19 @@
 .footer__map__wrapper {
   position: relative;
   overflow: hidden;
-  margin-left: 15%;
-  margin-top: 5%;
-  width: 500px;
-  height: 350px;
+  margin-left: 35%;
+  margin-top: 3%;
+  width: 760px;
+  height: 470px;
 }
 
 .titles__wrapper {
   margin-top: 11%;
-  font-size: 25px;
-  font-weight: 600px;
+  font-size: 23px;
+  font-weight: 300px;
   font-family: $Montserrat-Light;
-  color: #292a2b;
+  color: #0D1616;
+  line-height: 43.88px;
 }
 
 .contacts__wrapper {
@@ -97,8 +98,9 @@
   flex-direction: column;
   align-items: start;  
   gap: 20px;
+  font-family: $Montserrat-Medium;
   margin-top: 40px;
-  color:#474b4c;
+  color:#0D1616B2;
 }
 
 .policy__offer,
