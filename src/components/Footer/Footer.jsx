@@ -82,15 +82,17 @@ import { Icons } from '../Icons/Icons';
 
 import flower from '../../assets/picture/flower.svg';
 
-function FooterMain() {
+function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_text_block}>
         <p className={styles.footer_text}>
-        Мы работаем с лучшими поставщиками в городе, и тщательно отбираем лучший цветок для наших любимых клиентов.
+          Мы работаем с лучшими поставщиками в городе, и тщательно отбираем лучший цветок для наших
+          любимых клиентов.
         </p>
         <p className={styles.footer_text}>
-        Наша команда ответственно подходит к сборке каждого букета. Мы готовы в любой момент порадовать Ваших близкий замечательными букетами или композициями.
+          Наша команда ответственно подходит к сборке каждого букета. Мы готовы в любой момент
+          порадовать Ваших близкий замечательными букетами или композициями.
         </p>
       </div>
       <div className={styles.footer__container}>
@@ -140,12 +142,11 @@ function FooterMain() {
           </div>
         </div>
         <div className={styles.footer__contacts}>
-          
           <div className={styles.contacts__wrapper}>
-          <div className={styles.titles__wrapper}>
-            <p className={styles.footer__title}>Bon-Bon</p>
-            <p className={styles.footer__title}>Цветочный бутик</p>
-          </div>
+            <div className={styles.titles__wrapper}>
+              <p className={styles.footer__title}>Bon-Bon</p>
+              <p className={styles.footer__title}>Цветочный бутик</p>
+            </div>
             <a
               className={styles.contacts__phone}
               href="tel:+7 903 849 2777"
@@ -205,10 +206,9 @@ function FooterMain() {
             </a>
           </div>
         </div>
-        
       </div>
     </footer>
   );
 }
 
-export { FooterMain };
+export { Footer };
