@@ -11,23 +11,23 @@ const Advantages = () => {
       <div className={styles.list}>
         <div className={styles.list_item}>
           <img src={Icon1} alt="icon" className={styles.icon} />
-          <p className={styles.paragraph}>Особый подход к каждому клиенту</p>
+          <p className={styles.description}>Особый подход к каждому клиенту</p>
         </div>
-        <div>
+        <div className={styles.list_item2}>
           <img src={Icon2} alt="icon" className={styles.icon} />
-          <p className={styles.paragraph}>Опытные флористы высокой квалификации</p>
+          <p className={styles.description}>Опытные флористы высокой квалификации</p>
         </div>
-        <div>
+        <div className={styles.list_item}>
           <img src={Icon3} alt="icon" className={styles.icon} />
-          <p className={styles.paragraph}>Быстрая доставка</p>
+          <p className={styles.description}>Быстрая доставка</p>
         </div>
-        <div>
+        <div className={styles.list_item2}>
           <img src={Icon4} alt="icon" className={styles.icon} />
-          <p className={styles.paragraph}>Накопительная бонусная система</p>
+          <p className={styles.description}>Накопительная бонусная система</p>
         </div>
-        <div>
+        <div className={styles.list_item2}>
           <img src={Icon5} alt="icon" className={styles.icon} />
-          <p className={styles.paragraph}>Большое разнообразие свежих цветов</p>
+          <p className={styles.description}>Большое разнообразие свежих цветов</p>
         </div>
       </div>
     </div>
