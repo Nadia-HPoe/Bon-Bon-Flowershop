@@ -1,7 +1,7 @@
 @import '../../assets/styles/var';
 
 .team {
-  padding: 14.625rem 14.93rem 4.5625rem;
+  padding: 12rem 6.125rem 4.5625rem 5.8125rem;
   display: flex;
   flex-direction: column;
   font-family: $Montserrat-Regular;
@@ -19,42 +19,46 @@
 }
 
 .title {
-  padding: 2rem 9rem;
-  font-weight: 400;
+  padding: 2rem 8rem 4rem;
+  font-weight: 500;
   font-size: 32px;
   line-height: 39px;
-  letter-spacing: 0.05em;
+  // letter-spacing: 0.05em;
 }
 
 .team_container {
-  display: grid;
-  grid-template-columns: 1fr 1.65fr;
+  display: flex;
+  gap: 1.875rem;
   align-items: center;
-  grid-gap: 4.8125rem;
+  // display: grid;
+  // grid-template-columns: 1fr 2.2fr;
+  // grid-gap: 1.875rem;
 }
 .team_image {
   width: 100%;
   height: auto;
-  max-width: 585px;
+  max-width: 523px;
 }
 
 .team_info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: right;
+  align-items: end;
+  width: 75%;
 }
 
 .team_subtitle {
-  font-weight: 400;
+  padding-bottom: 2.2rem;
+  font-weight: 500;
   font-size: 32px;
   line-height: 39px;
   color: $dust-pink;
+  display: flex;
+  align-self: flex-start;
 }
 
 .paragraph {
-  padding-top: 1.6875rem;
+  padding-top: 1.6rem;
   font-weight: 300;
   font-size: 22px;
   line-height: 27px;
@@ -62,6 +66,9 @@
   color: #0d1616;
 }
 .team_logo {
+  position: relative;
+  // bottom: 0;
+  // right: 0;
   padding-top: 4rem;
   width: 100%;
   height: auto;
