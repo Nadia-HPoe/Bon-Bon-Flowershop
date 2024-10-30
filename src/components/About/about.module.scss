@@ -6,16 +6,19 @@
   flex-direction: column;
   font-family: $Montserrat-Regular;
   color: black;
+  margin: 0;
 }
 .advantages {
   padding: 5.375rem 6.125rem 5.25rem;
   font-family: $Montserrat-Regular;
   background-color: $pink;
+  margin: 0;
 }
 
 .creation {
-  padding: 12.6875rem;
+  padding: 6rem 6.125rem 3.4375rem;
   font-family: $Montserrat-Regular;
+  margin: 0;
 }
 
 .title {
@@ -23,28 +26,24 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
-  // letter-spacing: 0.05em;
 }
 
 .team_container {
   display: flex;
   gap: 1.875rem;
-  align-items: center;
-  // display: grid;
-  // grid-template-columns: 1fr 2.2fr;
-  // grid-gap: 1.875rem;
 }
+
 .team_image {
   width: 100%;
   height: auto;
   max-width: 523px;
+  object-fit: cover;
 }
 
 .team_info {
   display: flex;
   flex-direction: column;
   align-items: end;
-  width: 75%;
 }
 
 .team_subtitle {
@@ -62,9 +61,9 @@
   font-weight: 300;
   font-size: 22px;
   line-height: 27px;
-
   color: #0d1616;
 }
+
 .team_logo {
   position: relative;
   padding-top: 4rem;
@@ -85,6 +84,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .list_item {
   max-width: 200px;
 }
@@ -98,6 +98,7 @@
   height: auto;
   max-width: 187px;
 }
+
 .description {
   padding-top: 2.625rem;
   font-weight: 400;
@@ -108,8 +109,14 @@
 }
 
 .creation_info {
-  padding: 2rem;
+  padding: 1.56rem 5rem 7.93rem 8.25rem;
   background-color: $pink;
+}
+
+.creation_section {
+  display: flex;
+  gap: 4.1875rem;
+  padding-bottom: 2rem;
 }
 
 .creation_subtitle {
@@ -118,15 +125,15 @@
   font-size: 28px;
   line-height: 34px;
   letter-spacing: 0.05em;
-  width: 55%;
 }
 
 .creation_image {
-  float: right;
   width: 100%;
   height: auto;
-  max-width: 489px;
+  max-width: 668px;
+  object-fit: cover;
 }
+
 .creation_paragraph,
 .creation_paragraph2 {
   font-weight: 400;
@@ -134,12 +141,19 @@
   line-height: 27px;
   letter-spacing: 0.05em;
 }
+
 .creation_paragraph2 {
   text-indent: 30px;
 }
+
 .creation_logo {
-  max-width: 319px;
+  position: absolute;
+  right: 180px;
+  width: 100%;
+  height: auto;
+  max-width: 196px;
 }
+
 @media (max-width: 1700px) {
   .team_subtitle {
     font-size: 26px;
@@ -149,5 +163,38 @@
   .paragraph {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .icon {
+    width: 160px;
+  }
+
+  .creation_image {
+    max-width: 454px;
+  }
+
+  .creation_paragraph,
+  .creation_paragraph2 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: 1440px) {
+  .title {
+    padding: 2rem 6rem 4rem;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .icon {
+    width: 140px;
+  }
+  .description {
+    padding-top: 2.625rem;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
   }
 }
