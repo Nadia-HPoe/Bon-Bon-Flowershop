@@ -1,5 +1,5 @@
 import styles from './about.module.scss';
-import Image from '../../assets/images/about/about1.jfif';
+import Image from '../../assets/images/about/about-team.png';
 import Logo from '../../assets/logo/logo.png';
 const Team = () => {
   return (
