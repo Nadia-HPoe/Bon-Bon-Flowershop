@@ -96,11 +96,15 @@ function FooterMain() {
                   className={styles.contacts__whatsapp__icon}
                   name="whatsapp"
                   size="40"
-                  color="#676767"
+                  color="$gray-light"
                 />
               </a>
               <a className={styles.contacts__vk__icon} href="https://vk.com/bon_bon52">
-                <Icons className={styles.contacts__vk__icon} name="vk" size="40" color="#676767" />
+                <Icons className={styles.contacts__vk__icon}
+                name="vk"
+                size="40"
+                color="$gray-light"
+                />
               </a>
             </div>
           </div>
