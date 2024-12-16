@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Cart } from '../ModalCart/Cart';
+import { ModalFavorites } from '../ModalFavorires/ModalFavorites';
 import { Icons } from '../Icons';
 import Logo from '../../assets/logo/logo.png';
 import styles from './header.module.scss';
@@ -7,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [cartIsOpen, setCartIsOpen] = useState(false);
+  const [favoritesIsOpen, setFavoritesIsOpen] = useState(false);
 
   return (
     <header className={styles.header}>
@@ -50,9 +52,13 @@ const Header = () => {
           <button className={styles.header__icon}>
             <Icons className={styles.header__user} name="user" size="33" color="#FAE8F1" />
           </button>
-          <a href="#" className={styles.header__icon}>
+          <button className={styles.header__icon} onClick={() => setFavoritesIsOpen(true)}>
             <Icons className={styles.header__heart} name="heart" size="28" color="#FAE8F1" />
-          </a>
+          </button>
+          <ModalFavorites
+            isOpen={favoritesIsOpen}
+            onClose={() => setFavoritesIsOpen(false)}
+          ></ModalFavorites>
           <button className={styles.header__icon} onClick={() => setCartIsOpen(true)}>
             <Icons className={styles.header__cart} name="shopping-cart" size="38" color="#FAE8F1" />
           </button>
