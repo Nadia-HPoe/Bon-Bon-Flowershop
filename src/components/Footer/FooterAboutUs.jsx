@@ -1,10 +1,22 @@
-import styles from './Footer.module.scss';
+import styles from './FooterAboutUs.module.scss';
 import { Icons } from '../Icons/Icons';
 import { Link } from 'react-router-dom';
 
-function Footer() {
+function FooterAboutUs() {
   return (
     <footer className={styles.footer}>
+      <div className={styles.footer__text__block}>
+          <p className={styles.footer__text}>
+          Мы работаем с лучшими поставщиками в городе, и тщательно отбираем лучший цветок для наших
+          любимых клиентов.
+          </p>
+          <p className={styles.footer__text}>
+          Наша команда ответственно подходит к сборке каждого букета.
+          </p>
+          <p className={styles.footer__text}>
+          Мы готовы в любой момент порадовать Ваших близкий замечательными букетами или композициями.
+          </p>
+      </div>
       <div className={styles.footer__container}>
         <div className={styles.footer__map__wrapper}>
           <div style={{ position: 'relative', overflow: 'hidden' }}>
@@ -125,4 +137,4 @@ function Footer() {
   );
 }
 
-export { Footer };
+export { FooterAboutUs };

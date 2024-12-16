@@ -3,6 +3,7 @@ import { Footer } from '../../components/Footer/Footer';
 import { Team } from '../../components/About/Team';
 import { Advantages } from '../../components/About/Advantages';
 import { Creation } from '../../components/About/Creation';
+import { FooterAboutUs } from '../../components/Footer/FooterAboutUs';
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
       <Team />
       <Advantages />
       <Creation />
-      <Footer />
+      <FooterAboutUs />
     </>
   );
 };

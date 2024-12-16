@@ -43,7 +43,7 @@ const Header = () => {
       </div>
       <div className={styles.header__rightContainer}>
         <div className={styles.header__search}>
-          <Icons name="magnifying-glass" size="24" color="#0D1616" />
+          <Icons name="magnifying-glass" size="24" color="#gray" />
           <input type="text" className={styles.header__input} />
         </div>
         <div className={styles.header__icons}>

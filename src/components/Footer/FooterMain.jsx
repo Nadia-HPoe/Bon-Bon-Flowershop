@@ -1,16 +1,15 @@
 import styles from './FooterMain.module.scss';
 import { Icons } from '../Icons/Icons';
-
-import flower from '../../assets/picture/flower.svg';
+import { Link } from'react-router-dom';
 
 function FooterMain() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer_text_block}>
-        <p className={styles.footer_text}>
+      <div className={styles.footer__text__block}>
+        <p className={styles.footer__text}>
         Мы бережно собираем ваши эмоции в букеты и композиции, все наши работы собраны с душой и любовью!
         </p>
-        <p className={styles.footer_text}>
+        <p className={styles.footer__text}>
         Говорят, что нет вечного двигателя. А он есть. И имя ему - любовь!
         </p>
       </div>
@@ -52,8 +51,8 @@ function FooterMain() {
             </a>
             <iframe
               src="https://yandex.ru/map-widget/v1/?from=api-maps&ll=44.004658%2C56.305212&mode=search&oid=217049081924&ol=biz&origin=jsapi21&sll=44.016551%2C56.319245&sspn=0.068064%2C0.023133&text=%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20Bon-Bon&z=13"
-              width="560"
-              height="400"
+              width="600"
+              height="474"
               frameBorder="1"
               allowFullScreen="true"
               style={{ position: 'relative' }}
@@ -97,33 +96,37 @@ function FooterMain() {
                   className={styles.contacts__whatsapp__icon}
                   name="whatsapp"
                   size="40"
-                  color="#676767"
+                  color="$gray-light"
                 />
               </a>
               <a className={styles.contacts__vk__icon} href="https://vk.com/bon_bon52">
-                <Icons className={styles.contacts__vk__icon} name="vk" size="40" color="#676767" />
+                <Icons className={styles.contacts__vk__icon}
+                name="vk"
+                size="40"
+                color="$gray-light"
+                />
               </a>
             </div>
           </div>
           <div className={styles.policy__wrapper}>
-            <a className={styles.policy__offer} href="#">
+            <Link to="/catalogue" className={styles.policy__offer}>
               <p>Каталог</p>
-            </a>
-            <a className={styles.policy__offer} href="#">
+            </Link>
+            <Link to="/about" className={styles.policy__offer} >
               <p>О нас</p>
-            </a>
-            <a className={styles.policy__offer} href="#">
+            </Link>
+            <Link to="/blog" className={styles.policy__offer} >
               <p>Блог</p>
-            </a>
-            <a className={styles.policy__offer} href="#">
+            </Link>
+            <Link to="" className={styles.policy__offer} >
               <p>Оферта</p>
-            </a>
-            <a className={styles.policy__policy} href="#">
+            </Link>
+            <Link to="" className={styles.policy__policy} >
               <p>Политика</p>
-            </a>
-            <a className={styles.policy__delivery__payment} href="#">
+            </Link>
+            <Link to="/delivery" className={styles.policy__delivery__payment} >
               <p>Доставка и оплата</p>
-            </a>
+            </Link>
           </div>
         </div>
         
