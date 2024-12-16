@@ -25,8 +25,8 @@ const Cart = ({ isOpen, onClose }) => {
           <h2 className="cart__title">Пока ничего нет...</h2>
           <Link className="cart__link" Link to="/catalogue">
             Перейти в каталог
+            <Icons name="shopping-cart" size="250" color="#fae8f1" />
           </Link>
-          <Icons name="shopping-cart" size="300" color="#fae8f1" />
         </div>
         <div className="cart-container cart-full">
           <div className="cart-list__product_card">
@@ -72,8 +72,8 @@ const Cart = ({ isOpen, onClose }) => {
             </div>
           </div>
         </div>
-        <div className="cart-list_order">
-          <button className="cart-list_order_button">ЗАКАЗАТЬ</button>
+        <div className="cart-list_order ">
+          <button className="cart-list_order_button cart-full">ЗАКАЗАТЬ</button>
         </div>
       </div>
     </Modal>
