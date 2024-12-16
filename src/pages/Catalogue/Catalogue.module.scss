@@ -1,11 +1,13 @@
 @import '../../assets/styles/var';
 
 .catalogue {
-  padding: 10rem 0 0 21rem;
+  padding: 4rem 6rem 12rem 21rem;
   margin: 0 auto;
 }
 
 .category__title {
+  padding-bottom: 1.56rem;
+  color: $dark-gray;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
@@ -13,37 +15,27 @@
   line-height: 39px;
   letter-spacing: 0.01em;
 }
-
-// .catalogue__categories {
-// }
-
-.catalogue__grid {
-  grid-column: 2 / 3;
-  display: flex;
-  flex-direction: column;
+.category {
+  padding-top: 7.5rem;
+}
+.category__item {
+  img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
-.catalogue__product {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+@media (max-width: 1440px) {
+  .catalogue {
+    padding: 4rem 4rem 10rem 15rem;
+  }
 
-.catalogue__button {
-  display: flex;
-  justify-content: center;
-}
-
-.btn__showmore {
-  background-color: $pink;
-  font-family: $Montserrat-Bold, sans-serif;
-  color: $white;
-  margin: 1.5rem;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
-  border: none;
-  font-size: 1.5rem;
-  box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.21);
-  cursor: pointer;
+  .category__title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .category {
+    padding-top: 4rem;
+  }
 }
