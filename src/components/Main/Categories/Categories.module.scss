@@ -5,35 +5,46 @@
   margin: 6rem auto;
 
   .caregories_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     h2 {
-      font-family: $Montserrat-Light;
-      font-size: 2rem;
+      font-size: 32px;
       margin-bottom: 3rem;
     }
+  }
+  .caregories_wrapper h2 {
+    margin-left: 5rem; 
+    font-family: $Montserrat-Light;
+    font-weight: 300px;
   }
 
   .caregories {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     max-width: 1280px;
-    margin: 0 auto;
+    gap: 10px;
 
     .caregories_items {
       flex-basis: calc(33.33% - 0.5rem);
       height: 26rem;
       display: flex;
       justify-content: center;
-      align-items: center;
-      background-image: url('../../../assets/images/bonbon-main_categories.png');
-      margin-bottom: 0.5rem;
+      align-items: flex-end;
+      padding: 1rem;
+      text-align: center;
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       color: aliceblue;
       font-size: 2rem;
       transition: 0.5s all;
       font-family: $Montserrat-Light, sans-serif;
+      border-radius: 15px;
+      overflow: hidden;
 
       &.faded {
         opacity: 0.65;
@@ -44,6 +55,7 @@
         scale: 1.03;
         transition: 0.5s all;
       }
+
     }
   }
 }

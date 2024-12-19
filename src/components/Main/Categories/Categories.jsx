@@ -1,4 +1,19 @@
 import styles from './Categories.module.scss';
+import img1 from './../../../assets/images/categories/category1.jpeg';
+import img2 from './../../../assets/images/categories/category2.jpeg';
+import img3 from './../../../assets/images/categories/category3.jpeg';
+import img4 from './../../../assets/images/categories/category4.jpeg';
+import img5 from './../../../assets/images/categories/category5.jpeg';
+import img6 from './../../../assets/images/categories/category6.jpeg';
+
+const categories = [
+  {name: "Авторские букеты", image: img1},
+  {name: "Цветы в коробке", image: img2},
+  {name: "Корзины", image: img3},
+  {name: "Свадебные букеты", image: img4},
+  {name: "Сухоцветы", image: img5},
+  {name: "Дом и уют", image: img6},
+];
 
 const Categories = () => {
   const handleMouseEnter = (e) => {
@@ -21,50 +36,22 @@ const Categories = () => {
     <>
       <div className={styles.caregories_container}>
         <nav className={styles.caregories_wrapper}>
-          <h2>Категории</h2>
+          <h2 className={styles.categories_header}>
+            Категории
+          </h2>
           <ul className={styles.caregories}>
+            {categories.map((category, index) => (
             <li
+              key={index}
               className={styles.caregories_items}
+              style={{
+                backgroundImage: `linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(13, 22, 22, 0.7) 100%), url(${category.image})`}}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Категория 1
+              <div className={styles.category_text}>{category.name}</div>
             </li>
-            <li
-              className={styles.caregories_items}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              Категория 2
-            </li>
-            <li
-              className={styles.caregories_items}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              Категория 3
-            </li>
-            <li
-              className={styles.caregories_items}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              Категория 4
-            </li>
-            <li
-              className={styles.caregories_items}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              Категория 5
-            </li>
-            <li
-              className={styles.caregories_items}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              Категория 6
-            </li>
+            ))}
           </ul>
         </nav>
       </div>
