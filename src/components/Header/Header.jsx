@@ -5,10 +5,12 @@ import { Icons } from '../Icons';
 import Logo from '../../assets/logo/logo.png';
 import styles from './header.module.scss';
 import { Link } from 'react-router-dom';
+import { Auth } from '../ModalAuth/Auth';
 
 const Header = () => {
   const [cartIsOpen, setCartIsOpen] = useState(false);
   const [favoritesIsOpen, setFavoritesIsOpen] = useState(false);
+  const [AuthIsOpen, setAuthIsOpen] = useState(false);
 
   return (
     <header className={styles.header}>
@@ -49,10 +51,19 @@ const Header = () => {
           <input type="text" className={styles.header__input} />
         </div>
         <div className={styles.header__icons}>
-          <button className={styles.header__icon}>
+          <button className={styles.header__icon} 
+          onClick={() => setAuthIsOpen(true)}
+          >
             <Icons className={styles.header__user} name="user" size="33" color="#FAE8F1" />
           </button>
-          <button className={styles.header__icon} onClick={() => setFavoritesIsOpen(true)}>
+          <Auth
+          isOpen={AuthIsOpen}
+          onClose={() => setAuthIsOpen(false)}
+          ></Auth>
+          <button 
+          className={styles.header__icon} 
+          onClick={() => setFavoritesIsOpen(true)}
+          >
             <Icons className={styles.header__heart} name="heart" size="28" color="#FAE8F1" />
           </button>
           <ModalFavorites
