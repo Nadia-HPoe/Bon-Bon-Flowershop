@@ -1,16 +1,17 @@
 import styles from './FooterMain.module.scss';
 import { Icons } from '../Icons/Icons';
-import { Link } from'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function FooterMain() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__text__block}>
         <p className={styles.footer__text}>
-        Мы бережно собираем ваши эмоции в букеты и композиции, все наши работы собраны с душой и любовью!
+          Мы бережно собираем ваши эмоции в букеты и композиции, все наши работы собраны с душой и
+          любовью!
         </p>
         <p className={styles.footer__text}>
-        Говорят, что нет вечного двигателя. А он есть. И имя ему - любовь!
+          Говорят, что нет вечного двигателя. А он есть. И имя ему - любовь!
         </p>
       </div>
       <div className={styles.footer__container}>
@@ -60,19 +61,19 @@ function FooterMain() {
           </div>
         </div>
         <div className={styles.footer__contacts}>
-          
           <div className={styles.contacts__wrapper}>
-          <div className={styles.titles__wrapper}>
-            <p className={styles.footer__title}>Bon-Bon</p>
-            <p className={styles.footer__title}>Цветочный бутик</p>
-          </div>
-            <a
-              className={styles.contacts__phone}
-              href="tel:+7 903 849 2777"
-              aria-label="Позвонить по телефону +7 903 888 9977"
-            >
-              <p>+7 903 849 2777</p>
-            </a>
+            <div className={styles.titles__wrapper}>
+              <p className={styles.footer__title}>Bon-Bon</p>
+              <p className={styles.footer__title}>Цветочный бутик</p>
+              <a
+                className={styles.contacts__phone}
+                href="tel:+7 903 849 2777"
+                aria-label="Позвонить по телефону +7 903 888 9977"
+              >
+                <p>+7 903 849 2777</p>
+              </a>
+            </div>
+
             <div className={styles.contacts__working__hours}>
               <p className={styles.contacts__working__hours__title}>График работы:</p>
               <p className={styles.contacts__working__hours__text}>
@@ -95,16 +96,12 @@ function FooterMain() {
                 <Icons
                   className={styles.contacts__whatsapp__icon}
                   name="whatsapp"
-                  size="40"
-                  color="$gray-light"
+                  size="58"
+                  color="#676767"
                 />
               </a>
               <a className={styles.contacts__vk__icon} href="https://vk.com/bon_bon52">
-                <Icons className={styles.contacts__vk__icon}
-                name="vk"
-                size="40"
-                color="$gray-light"
-                />
+                <Icons className={styles.contacts__vk__icon} name="vk" size="58" color="#676767" />
               </a>
             </div>
           </div>
@@ -112,24 +109,23 @@ function FooterMain() {
             <Link to="/catalogue" className={styles.policy__offer}>
               <p>Каталог</p>
             </Link>
-            <Link to="/about" className={styles.policy__offer} >
+            <Link to="/about" className={styles.policy__offer}>
               <p>О нас</p>
             </Link>
-            <Link to="/blog" className={styles.policy__offer} >
+            <Link to="/blog" className={styles.policy__offer}>
               <p>Блог</p>
             </Link>
-            <Link to="" className={styles.policy__offer} >
+            <Link to="" className={styles.policy__offer}>
               <p>Оферта</p>
             </Link>
-            <Link to="" className={styles.policy__policy} >
+            <Link to="" className={styles.policy__policy}>
               <p>Политика</p>
             </Link>
-            <Link to="/delivery" className={styles.policy__delivery__payment} >
+            <Link to="/delivery" className={styles.policy__delivery__payment}>
               <p>Доставка и оплата</p>
             </Link>
           </div>
         </div>
-        
       </div>
     </footer>
   );

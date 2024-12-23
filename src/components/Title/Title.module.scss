@@ -26,10 +26,13 @@
 // }
 
 .title {
-  text-align: center;
-  padding: 5rem 0;
+  text-align: left;
+  padding: 7.5rem 0 2.88rem;
   margin: 0 auto;
-  color: #ff0090;
-  font-family: $Montserrat-Light;
+  color: $dust-pink;
+  font-family: $Montserrat-Regular;
   font-size: 1.75rem;
+  line-height: 59px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }

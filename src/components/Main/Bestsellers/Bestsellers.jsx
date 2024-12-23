@@ -18,7 +18,7 @@ const Bestsellers = () => {
   const items = bouquets.map((item) => <CarouselCard key={item.id} {...item} />);
 
   return (
-    <section>
+    <section className={styles.container}>
       <h2 className={styles.bestsellers__title}>Бестселлеры</h2>
       <Slider items={items} />
     </section>

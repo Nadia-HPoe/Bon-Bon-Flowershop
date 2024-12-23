@@ -1,5 +1,12 @@
 @import '../../../assets/styles/var';
 
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0 7rem;
+}
+
 .ready_bouquet__title {
   font-family: $Montserrat-Light;
   font-size: 2rem;
