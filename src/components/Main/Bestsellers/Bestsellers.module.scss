@@ -1,6 +1,13 @@
 @import '../../../assets/styles/var';
 
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 0 4.4rem;
+}
 .bestsellers__title {
+  padding-bottom: 4.68rem;
   font-family: $Montserrat-Light;
   font-size: 2rem;
   font-weight: 300;
