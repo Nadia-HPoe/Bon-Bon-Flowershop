@@ -1,10 +1,10 @@
 import styles from './Categories.module.scss';
-import img1 from './../../../assets/images/categories/category1.jpeg';
-import img2 from './../../../assets/images/categories/category2.jpeg';
-import img3 from './../../../assets/images/categories/category3.jpeg';
-import img4 from './../../../assets/images/categories/category4.jpeg';
-import img5 from './../../../assets/images/categories/category5.jpeg';
-import img6 from './../../../assets/images/categories/category6.jpeg';
+import img1 from './../../../assets/images/categories/category1.jpg';
+import img2 from './../../../assets/images/categories/category2.jpg';
+import img3 from './../../../assets/images/categories/category3.jpg';
+import img4 from './../../../assets/images/categories/category4.avif';
+import img5 from './../../../assets/images/categories/category5.avif';
+import img6 from './../../../assets/images/categories/category6.avif';
 
 const categories = [
   { name: 'Авторские букеты', image: img1 },

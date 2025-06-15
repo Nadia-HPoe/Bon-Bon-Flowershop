@@ -1,6 +1,6 @@
 import styles from './about.module.scss';
 import Image from '../../assets/images/about/about-owner.png';
-import Logo from '../../assets/logo/logo.png';
+import Logo from '../../assets/logo/logo.svg';
 
 const Creation = () => {
   return (

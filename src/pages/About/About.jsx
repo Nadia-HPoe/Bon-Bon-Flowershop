@@ -10,8 +10,8 @@ const About = () => {
     <>
       <Header />
       <Team />
-      <Advantages />
-      <Creation />
+      {/* <Advantages />
+      <Creation /> */}
       <FooterAboutUs />
     </>
   );

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import photo1 from '../../../assets/images/photo-carousel/photo-carousel_1.jpg';
-import photo2 from '../../../assets/images/photo-carousel/photo-carousel_2.jpg';
-import photo3 from '../../../assets/images/photo-carousel/photo-carousel_3.jpg';
+import photo1 from '../../../assets/images/photo-carousel/photo-carousel_1.avif';
+import photo2 from '../../../assets/images/photo-carousel/photo-carousel_2.avif';
+import photo3 from '../../../assets/images/photo-carousel/photo-carousel_3.avif';
 import styles from './PhotoCarousel.module.scss';
 
 const photos = [photo1, photo2, photo3];

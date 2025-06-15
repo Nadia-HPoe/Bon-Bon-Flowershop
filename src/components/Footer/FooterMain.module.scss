@@ -1,7 +1,6 @@
 @import '/src/assets/styles/var.scss';
 
 .footer {
-  width: 100vw;
   max-width: 1920px;
   background-color: #eaeaea;
   color: $dark-gray;
@@ -17,7 +16,7 @@
   font-size: 34px;
   line-height: 41px;
   text-align: center;
-  color: $dust-pink;
+  color: black;
   &:last-child {
     padding-top: 3rem;
   }

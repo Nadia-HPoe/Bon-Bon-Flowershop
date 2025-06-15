@@ -24,7 +24,7 @@ const Title = () => {
           preRenderFirstString={true}
           sequence={[
             // Same substring at the start will only be typed out once, initially
-            'Доставка цветов в Нижнем Новгороде',
+            'Доставка цветов по всей Москве',
             15000, // wait 1s before replacing "Mice" with "Hamsters"
             // 'Свадебные букеты, праздничное оформление, сухоцветы',
             // 2000,
