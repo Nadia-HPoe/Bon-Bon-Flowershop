@@ -32,3 +32,12 @@
     height: 100%;
   }
 }
+@media (max-width: 1439px) {
+  .carousel {
+    max-height: 350px;
+  }
+  .carousel__image {
+    width: 150px;
+    height: 100%;
+  }
+}

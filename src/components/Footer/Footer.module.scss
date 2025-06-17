@@ -132,16 +132,69 @@
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   .footer__container {
-    width: 1200px;
+    padding: 5rem 1rem 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3rem;
   }
-  .footer__map__wrapper {
-    left: 100px;
+  .footer__text__block {
+    padding: 4rem 2rem;
+  }
+  .footer__text {
+    font-size: 20px;
+    line-height: 24px;
   }
 
-  .footer__text__block {
-    padding: 4.4rem 6rem 0;
+  .footer__map__wrapper {
+    align-items: start;
+  }
+
+  iframe {
+    width: 450px;
+    height: 350px;
+  }
+
+  .footer__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .contacts__wrapper {
+    gap: 1rem;
+  }
+
+  .contacts__phone {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .contacts__mail {
+    padding-top: 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .policy__wrapper {
+    font-size: 18px;
+    gap: 1.34rem;
+  }
+
+  .policy__offer {
+    &:nth-child(3) {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .contacts__icons {
+    gap: 1rem;
+  }
+
+  .contacts__whatsapp__icon,
+  .contacts__vk__icon {
+    width: 40px;
+    height: 40px;
   }
 }
 @media (max-width: 1200px) {

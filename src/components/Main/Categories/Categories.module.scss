@@ -60,3 +60,37 @@
     }
   }
 }
+@media (max-width: 1439px) {
+  .caregories_container {
+    max-width: 760px;
+
+    .caregories_wrapper {
+      padding: 3rem 2rem;
+    }
+
+    .title {
+      padding-bottom: 3rem;
+      font-size: 1.5rem;
+    }
+    .caregories {
+      max-width: 760px;
+      gap: 10px;
+
+      .caregories_items {
+        height: 13rem;
+        padding: 1rem;
+        font-size: 1rem;
+
+        &.faded {
+          opacity: 0.65;
+        }
+
+        &:hover {
+          cursor: pointer;
+          scale: 1.03;
+          transition: 0.5s all;
+        }
+      }
+    }
+  }
+}

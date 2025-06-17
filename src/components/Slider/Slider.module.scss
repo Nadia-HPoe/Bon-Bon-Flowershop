@@ -19,3 +19,10 @@
   border-color: $pink;
   background-color: $pink;
 }
+
+@media (max-width: 1439px) {
+  .bullet {
+    width: 14px;
+    height: 14px;
+  }
+}

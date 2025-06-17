@@ -50,6 +50,9 @@ const Header = () => {
         </div>
         <div className={styles.header__icons}>
           <button className={styles.header__icon}>
+            <Icons className={styles.header__mobile} name="mobile" size="28" color="#0d1616" />
+          </button>
+          <button className={styles.header__icon}>
             <Icons className={styles.header__user} name="user" size="33" color="#FAE8F1" />
           </button>
           <button className={styles.header__icon} onClick={() => setFavoritesIsOpen(true)}>
