@@ -59,3 +59,14 @@
     background-color: $light-gray;
   }
 }
+
+@media (max-width: 1919px) {
+  .mainBanner_container {
+    width: 1440px;
+    height: 900px;
+  }
+
+  .mainBanner_logo {
+    max-width: 400px;
+  }
+}

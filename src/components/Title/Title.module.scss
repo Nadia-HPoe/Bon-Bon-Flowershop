@@ -29,10 +29,19 @@
   text-align: left;
   padding: 7.5rem 0 2.88rem;
   margin: 0 auto;
-  color: $dust-pink;
+  color: $bright-pink;
   font-family: $Montserrat-Regular;
   font-size: 1.75rem;
   line-height: 59px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+}
+
+@media (max-width: 1919px) {
+  .title {
+    text-align: center;
+    padding: 3rem 0 2.88rem;
+    font-size: 1.3rem;
+    line-height: 40px;
+  }
 }

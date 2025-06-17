@@ -4,7 +4,6 @@ import Logo from '../../assets/logo/logo.png';
 const Team = () => {
   return (
     <div className={styles.team}>
-      <h1 className={styles.title}>Наша команда</h1>
       <div className={styles.team_container}>
         <img src={Image} alt="team" className={styles.team_image} />
         <div className={styles.team_info}>

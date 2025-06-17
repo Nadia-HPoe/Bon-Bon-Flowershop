@@ -86,3 +86,21 @@
   stroke: $dark-gray;
   fill: none;
 }
+
+@media (max-width: 1919px) {
+  .header {
+    padding: 1rem 4rem;
+    max-width: 1440px;
+  }
+  .header__logo {
+    width: 5rem;
+  }
+  .header__leftContainer {
+    gap: 2rem;
+  }
+
+  .header__menuLink {
+    font-size: 20px;
+    line-height: 26.82px;
+  }
+}
