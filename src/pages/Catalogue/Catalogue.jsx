@@ -6,11 +6,14 @@ import 'swiper/css/free-mode';
 import { FreeMode } from 'swiper/modules';
 
 import CatalogueCard from '../../components/CatalogueCard/CatalogueCard';
+// import styles from '../../components/CarouselCard/CarouselCard.module.scss';
 import styles from '../Catalogue/Catalogue.module.scss';
 import { Header } from '../../components/Header/Header';
+import { ModalCard } from '../../components/ModalCard/ModalCard';
 import { Footer } from '../../components/Footer/Footer';
 const Catalogue = () => {
   const [flowers, setFlowers] = useState([]);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,6 +43,15 @@ const Catalogue = () => {
                 <SwiperSlide key={flower.id}>
                   <div className={styles.category__item}>
                     <img src={flower.img} alt={flower.name} />
+                    {/* <div className={styles}>
+                      <button className={styles.card__button} onClick={() => setModalIsOpen(true)}>
+                        Купить
+                      </button>
+                    </div>
+                    <ModalCard
+                      isOpen={modalIsOpen}
+                      onClose={() => setModalIsOpen(false)}
+                    ></ModalCard> */}
                   </div>
                 </SwiperSlide>
               ))}

@@ -11,3 +11,10 @@
 .swiper-button-next {
   color: $dust-pink;
 }
+
+@media (max-width: 1439px) {
+  .swiper-slide {
+    position: relative;
+    width: 250px;
+  }
+}

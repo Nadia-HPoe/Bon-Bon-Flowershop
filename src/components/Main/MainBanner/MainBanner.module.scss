@@ -55,7 +55,43 @@
   &:hover,
   &:active {
     transition: 0.3s all;
-    border: 2px solid $bright-pink;
+    color: $bright-pink;
     background-color: $light-gray;
+  }
+}
+
+@media (max-width: 1919px) {
+  .mainBanner_container {
+    width: 1440px;
+    height: 900px;
+  }
+
+  .mainBanner_logo {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1439px) {
+  .mainBanner_container {
+    width: 760px;
+    height: 552px;
+  }
+  .mainBanner_container_logo {
+    padding: 8rem 6rem 0;
+  }
+  .mainBanner_logo {
+    max-width: 200px;
+  }
+
+  .mainBanner_text {
+    padding: 1rem 0;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .mainBanner_button {
+    font-size: 20px;
+    line-height: 29px;
+    width: 200px;
+    height: 50px;
   }
 }

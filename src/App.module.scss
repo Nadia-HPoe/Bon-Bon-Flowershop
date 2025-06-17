@@ -2,6 +2,7 @@
 
 #root {
   margin: 0 auto;
+  padding: 0;
   text-align: center;
   width: 100vw;
 }
@@ -12,12 +13,12 @@
 }
 
 @media (max-width: 1919px) {
-  .main {
+  .app {
     width: 1440px;
   }
 }
 @media (max-width: 1439px) {
-  .main {
+  .app {
     width: 760px;
   }
 }

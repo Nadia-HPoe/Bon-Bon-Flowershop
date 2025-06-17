@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 import CarouselCard from '../../CarouselCard/CarouselCard';
-import Title from '../../Title/Title';
 import Slider from '../../Slider/Slider';
 import styles from './ReadyBouquet.module.scss';
-
 const dataUrl = '/flowers.json';
 
 const ReadyBouquet = () => {
@@ -20,7 +18,6 @@ const ReadyBouquet = () => {
 
   return (
     <section className={styles.container}>
-      <Title />
       <h2 className={styles.ready_bouquet__title}>Готовые букеты</h2>
       <Slider items={items} />
     </section>

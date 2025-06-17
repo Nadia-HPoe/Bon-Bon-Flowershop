@@ -3,7 +3,7 @@ import { ModalCard } from '../../components/ModalCard/ModalCard';
 import MainBanner from '../../components/Main/MainBanner/MainBanner';
 import Categories from '../../components/Main/Categories/Categories';
 import ReadyBouquet from '../../components/Main/ReadyBouquet/ReadyBouquet';
-
+import Title from '../../components/Title/Title';
 import styles from '../../components/CarouselCard/CarouselCard.module.scss';
 import { Header } from '../../components/Header/Header';
 import { FooterMain } from '../../components/Footer/FooterMain';
@@ -25,7 +25,7 @@ function Main() {
         </button>
         <ModalCard isOpen={modalIsOpen} onClose={() => setModalIsOpen(false)}></ModalCard>
       </div>
-
+      <Title />
       <ReadyBouquet />
       <Categories />
       <Bestsellers />
