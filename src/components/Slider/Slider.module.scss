@@ -26,3 +26,8 @@
     height: 14px;
   }
 }
+@media (max-width: 767px) {
+  .bullet {
+    display: none;
+  }
+}

@@ -72,7 +72,7 @@
 }
 @media (max-width: 1439px) {
   .mainBanner_container {
-    width: 760px;
+    width: 768px;
     height: 552px;
   }
   .mainBanner_container_logo {
@@ -93,5 +93,23 @@
     line-height: 29px;
     width: 200px;
     height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .mainBanner_container {
+    width: 375px;
+    height: 350px;
+    background-position: center 4.375rem;
+  }
+  .mainBanner_container_logo {
+    padding: 5rem 0 0;
+  }
+
+  .mainBanner_logo {
+    max-width: 106px;
+  }
+
+  .mainBanner_text {
+    display: none;
   }
 }

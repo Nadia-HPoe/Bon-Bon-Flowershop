@@ -116,6 +116,9 @@
     padding-bottom: 4.56rem;
   }
 }
+.policy__mobile {
+  display: none;
+}
 
 @media (max-width: 1919px) {
   .footer__text {
@@ -197,160 +200,57 @@
     height: 40px;
   }
 }
-@media (max-width: 1200px) {
-  .footer__container {
-    width: 1000px;
+
+@media (max-width: 767px) {
+  .footer__text__block {
+    padding: 4rem 1.3rem;
+    background-color: #ffffff;
   }
 
-  .footer__contacts {
+  .footer__text {
+    font-size: 18px;
+    color: $dust-pink;
+  }
+
+  .footer__container {
+    padding: 3rem 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+  }
+
+  iframe {
+    width: 146px;
+    height: 151px;
+  }
+  .contacts__phone {
     font-size: 16px;
-    font-weight: 100px;
+    line-height: 20px;
   }
-  .footer__title {
-    font-size: 30px;
-  }
-  .policy__wrapper {
-    font-size: 20px;
-  }
-  .contacts__phone {
-    font-size: 25px;
-  }
+
   .contacts__mail {
-    font-size: 25px;
-  }
-  .contacts__address,
-  .contacts__working__hours,
-  .contacts__mail {
-    font-size: 20px;
-  }
-  .footer__map__wrapper {
-    left: 10;
-    width: 90%;
+    font-size: 16px;
+    line-height: 20px;
   }
 
-  .contacts__whatsapp__icon,
-  .contacts__vk__icon {
-    justify-content: left;
-    width: 40px;
-    height: 40px;
-  }
-
-  .policy__wrapper {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer__container {
-    grid-template-columns: 1fr;
-  }
-  .footer__text {
-    font-size: 20px;
-  }
-  .footer__map__wrapper {
-    width: 80%;
-    height: 80%;
-    gap: 0;
-    position: 0;
-    margin-bottom: 0;
-  }
-
-  .footer__contacts {
-    left: 10px;
-    gap: 0%;
-    padding: 0;
-    margin: 0;
-  }
-  .contacts__working__hours {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .footer__title {
-    font-size: 20px;
-    font-weight: 100px;
-  }
-  .contacts__phone {
-    font-size: 15px;
-  }
-  .footer__contacts {
-    margin-left: 10%;
-    margin-top: -10%;
-  }
-  .contacts__address,
-  .contacts__working__hours,
-  .contacts__mail {
-    font-size: 15px;
-  }
-  .contacts__icons {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  .contacts__whatsapp__icon,
-  .contacts__vk__icon {
-    width: 30px;
-    height: 30px;
-  }
-  .policy__wrapper {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer__container {
+  .policy__mobile {
+    padding: 20px 12px;
     display: flex;
-    flex-direction: column;
-  }
-  .footer__map__wrapper {
-    width: 350px;
-    height: 350px;
-    left: 65px;
-    margin-bottom: 70px;
-  }
-  .footer__contacts {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-top: -10%;
-    align-items: center;
-  }
-  .footer__text {
-    font-size: 15px;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.05em;
+    color: #8e9191;
   }
 
-  .contacts__working__hours {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .footer__title {
-    font-size: 20px;
-    font-weight: 100px;
-  }
-  .contacts__phone {
-    font-size: 15px;
-  }
-  .footer__contacts {
-    margin-left: 10%;
-  }
-  .contacts__address,
-  .contacts__working__hours,
-  .contacts__mail {
-    font-size: 15px;
-  }
-  .contacts__icons {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    margin-left: 45px;
-  }
-  .contacts__whatsapp__icon,
-  .contacts__vk__icon {
-    width: 30px;
-    height: 30px;
-  }
   .policy__wrapper {
-    font-size: 15px;
-    margin-left: -240px;
-    margin-bottom: 20px;
-    align-items: center;
+    display: none;
+  }
+
+  .titles__wrapper {
+    display: none;
   }
 }

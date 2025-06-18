@@ -25,3 +25,13 @@
     font-size: 1.5rem;
   }
 }
+@media (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+  .bestsellers__title {
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}

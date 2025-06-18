@@ -92,6 +92,10 @@
   stroke: $dark-gray;
 }
 
+.header__mobile_menu {
+  display: none;
+}
+
 @media (max-width: 1919px) {
   .header {
     padding: 1rem 4rem;
@@ -112,7 +116,7 @@
 @media (max-width: 1439px) {
   .header {
     padding: 1rem 2rem;
-    max-width: 760px;
+    max-width: 768px;
   }
   .header__menu {
     display: none;
@@ -120,5 +124,27 @@
 
   .header__mobile {
     display: inline;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 1rem 1.5rem;
+    max-width: 375px;
+    min-height: 4rem;
+    height: 70px;
+  }
+
+  .header__logo {
+    width: 4rem;
+  }
+
+  .header__rightContainer {
+    display: none;
+  }
+
+  .header__mobile_menu {
+    display: flex;
+    gap: 2rem;
   }
 }
