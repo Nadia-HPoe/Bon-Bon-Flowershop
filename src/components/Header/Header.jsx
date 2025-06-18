@@ -68,6 +68,14 @@ const Header = () => {
           <Cart isOpen={cartIsOpen} onClose={() => setCartIsOpen(false)}></Cart>
         </div>
       </div>
+      <div className={styles.header__mobile_menu}>
+        <button className={(styles.header__mobile_search, styles.header__icon)}>
+          <Icons name="magnifying-glass" size="24" color="#gray" />
+        </button>
+        <button className={(styles.header__mobile_nav, styles.header__icon)}>
+          <Icons className={styles.header__mobile} name="mobile" size="24" color="#gray" />
+        </button>
+      </div>
     </header>
   );
 };

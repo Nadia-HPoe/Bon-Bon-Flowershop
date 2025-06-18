@@ -41,3 +41,19 @@
     height: 100%;
   }
 }
+@media (max-width: 767px) {
+  .carousel {
+    padding: 20px 0;
+    max-height: 565px;
+  }
+
+  .carousel__image {
+    width: 285px;
+    height: 285px;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+}

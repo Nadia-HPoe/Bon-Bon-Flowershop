@@ -24,3 +24,13 @@
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+  .ready_bouquet__title {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}

@@ -14,7 +14,20 @@
 
 @media (max-width: 1439px) {
   .swiper-slide {
-    position: relative;
     width: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .swiper-slide {
+    width: 290px;
+    height: 420px;
+  }
+  .swiper-slide img {
+    max-height: 230px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 96%);
+    width: calc(var(--swiper-navigation-size) / 5 * 27);
   }
 }
