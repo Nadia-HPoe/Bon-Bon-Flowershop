@@ -9,7 +9,7 @@ import './modal.scss';
 import modalcardStyles from '../ModalCard/modalcard.module.scss';
 
 import { FreeMode, Thumbs } from 'swiper/modules';
-import Image from '../../assets/images/bonbon-image1.png';
+import Image from '../../assets/images/categories/category3.jpg';
 import Image2 from '../../assets/images//bouquets/bouquet-1.png';
 
 const ModalCarousel = () => {

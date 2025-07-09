@@ -182,20 +182,54 @@
   }
 }
 
-@media (max-width: 1440px) {
-  .title {
-    padding: 2rem 6rem 4rem;
-    font-size: 28px;
-    line-height: 32px;
+@media (max-width: 1439px) {
+  .team {
+    padding: 9rem 5rem 4rem;
   }
-
-  .icon {
-    width: 140px;
+  .team_container {
+    flex-direction: column;
+    align-items: center;
   }
-  .description {
-    padding-top: 2.625rem;
+  .team_subtitle {
+    padding-bottom: 2.2rem;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .paragraph {
     font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.05em;
+    line-height: 20px;
+  }
+  .team_image {
+    max-width: 400px;
+  }
+  .team_logo {
+    align-self: center;
+  }
+}
+@media (max-width: 767px) {
+  .team {
+    padding: 5rem 2rem 2rem;
+  }
+  .team_container {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .team_subtitle {
+    padding-bottom: 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .team_image {
+    max-width: 350px;
+    margin-top: -210px;
+  }
+  .team_logo {
+    align-self: start;
+    opacity: 0.3;
+    bottom: 30px;
   }
 }

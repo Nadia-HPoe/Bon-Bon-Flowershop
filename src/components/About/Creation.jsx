@@ -1,5 +1,5 @@
 import styles from './about.module.scss';
-import Image from '../../assets/images/about/about-owner.png';
+
 import Logo from '../../assets/logo/logo.svg';
 
 const Creation = () => {
@@ -39,7 +39,6 @@ const Creation = () => {
               моей мечты, и мы задумались о переезде.
             </p>
           </div>
-          <img src={Image} alt="owner" className={styles.creation_image} />
         </div>
 
         <p className={styles.creation_paragraph2}>

@@ -28,15 +28,40 @@
     max-width: 300px;
   }
 }
-
-.button {
+.button_container {
   position: relative;
   bottom: 5rem;
 }
-
-@media (max-width: 1440px) {
+.card__button {
+  border: none;
+  padding: 21px 55px;
+  border-radius: 45px;
+  background-color: $light-pink;
+  font-family: $Montserrat-Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.26px;
+  letter-spacing: 0.05em;
+  color: $dark-gray;
+  transition: 0.3s all;
+  cursor: pointer;
+  opacity: 0.85;
+  &:hover,
+  &:active {
+    background-color: $light-gray;
+    color: $bright-pink;
+    fill: $dust-pink;
+  }
+}
+@media (max-width: 1919px) {
+  .card__button {
+    padding: 15px 45px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1439px) {
   .catalogue {
-    padding: 4rem 4rem 10rem 15rem;
+    padding: 5rem 4rem 10rem;
   }
 
   .category__title {
@@ -44,6 +69,38 @@
     line-height: 35px;
   }
   .category {
-    padding-top: 4rem;
+    padding-top: 3rem;
+  }
+  .button_container {
+    bottom: 3.2rem;
+  }
+  .card__button {
+    padding: 8px 21px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .catalogue {
+    padding: 7rem 2rem 5rem;
+  }
+
+  .category__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .category {
+    padding-top: 1rem;
+    height: 250px;
+  }
+  .category__item {
+    height: 100px;
+  }
+  .button_container {
+    bottom: 2.2rem;
+  }
+  .card__button {
+    padding: 6px;
+    display: flex;
+    align-items: center;
   }
 }

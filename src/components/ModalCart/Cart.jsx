@@ -1,5 +1,5 @@
 import Modal from 'react-modal';
-import Image from '../../assets/images/bonbon-image1.png';
+import Image from '../../assets/images/categories/category1.jpg';
 import { Icons } from '../Icons';
 import { Link } from 'react-router-dom';
 import './cart.scss';
