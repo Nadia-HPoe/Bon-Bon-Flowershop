@@ -45,7 +45,7 @@ Daria Fadeeva - Frontend-developer
 
 Daria Demidova - Frontend Developer
 - https://github.com/dariaSDemidova
-- daashenkaa@mail.ru
+- demidova.daris@gmail.com
 
 Bermet Akerova - Frontend Developer
 - https://github.com/Bemadler
